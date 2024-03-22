@@ -1,0 +1,214 @@
+@import "reset", "font", "variable";
+
+.iw_bubble {
+  padding: 0.8rem 1.7rem;
+  border-width: 0;
+  font-size: $small;
+  font-weight: $bold;
+  color: #045762;
+}
+
+//map
+.map {
+  max-width: 1920px;
+  width: 100%;
+  height: 1070px;
+  background-color: #cad6d8;
+  .map_in {
+    width: 1500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    .map_left {
+      .map_title {
+        padding-top: 90px;
+        h2 {
+          font-size: $h3;
+          font-weight: $bold;
+        }
+        .map_subtitle {
+          padding-top: 30px;
+          position: relative;
+          z-index: 1;
+          &::before {
+            content: "";
+            background: url(../img/map/Group\ 314.png) no-repeat;
+            width: 1897px;
+            height: 46px;
+            position: absolute;
+            bottom: -15px;
+            left: -970px;
+            z-index: -1;
+          }
+          a {
+            color: $white;
+            font-size: $h6;
+            &:nth-child(1) {
+              font-family: $logo-font;
+            }
+            &:nth-child(2) {
+              padding-left: 60px;
+            }
+            &:nth-child(3) {
+              padding-left: 50px;
+            }
+          }
+        }
+      }
+      .map_api {
+        // position: absolute;
+        // top: 310px;
+        padding-top: 60px;
+        #map {
+          cursor: pointer;
+        }
+      }
+    }
+    .map_right {
+      padding-top: 150px;
+      width: 440px;
+      .map_right_in {
+        .map_right_title {
+          h3 {
+            font-size: $card-bold;
+            font-weight: bold;
+            position: relative;
+            &::before {
+              content: "";
+              width: 440px;
+              height: 1px;
+              background-color: #5a5a5a;
+              position: absolute;
+              top: 40px;
+              display: block;
+            }
+          }
+        }
+        .map_location {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 35px;
+          .location {
+            span {
+              font-size: $h6;
+              color: $light-black;
+            }
+          }
+          .location_name {
+            margin-bottom: 10px;
+            select {
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+              border-radius: 0.2rem;
+              background: url(../img/map/input_arrow.svg) no-repeat 95% 50%;
+              background-size: 8%;
+              font-size: $h6;
+              border: 1.5px solid $dark-green;
+              height: 40px;
+              width: 180px;
+              outline: none;
+              color: $dim-darkgray;
+              font-weight: $medium;
+              padding: 0.5rem;
+              background-color: transparent;
+              option {
+                color: $white;
+                font-size: $h6;
+                background-color: $dark-green;
+              }
+            }
+          }
+        }
+        .map_impo_wrap {
+          overflow-y: scroll;
+          .map_impo_in {
+            #test_1 {
+              display: block;
+            }
+            .map_impo {
+              padding-top: 10px;
+              display: none;
+              height: 700px;
+              .impo_items {
+                width: 96%;
+                border: 1px solid $white;
+                border-radius: 5px;
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+                margin-top: 10px;
+                .impo_img {
+                  text-align: center;
+                  img {
+                    text-align: center;
+                    width: 410px;
+                    display: none;
+                    // padding-top: 10px;
+                    border-radius: 5px 5px 0px 0px;
+                  }
+                }
+                .impo_item {
+                  .impo_name {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    padding-left: 10px;
+                    padding-top: 15px;
+                    img {
+                    }
+                    h3 {
+                      cursor: pointer;
+                      color: $black;
+                      font-weight: $bold;
+                    }
+                  }
+                  .impo_detail {
+                    .impo_locate {
+                      padding-left: 30px;
+                      padding-top: 15px;
+                      .fa-location-dot {
+                        color: #045762;
+                      }
+                      span {
+                        padding-left: 5px;
+                        font-size: $h6;
+                        color: $dim-darkgray;
+                      }
+                    }
+                    .impo_num {
+                      padding-left: 30px;
+                      padding-top: 10px;
+                      .fa-phone {
+                        color: #045762;
+                      }
+                      span {
+                        padding-left: 5px;
+                        font-size: $h6;
+                        color: $dim-darkgray;
+                      }
+                    }
+                  }
+                }
+                .impo_button {
+                  padding-left: 190px;
+                  padding-top: 10px;
+                  padding-bottom: 20px;
+                  a {
+                    padding: 0.3rem 1.6rem;
+                    font-size: 0.6rem;
+                    color: $white;
+                    background-color: $black;
+                    transition: 0.5s;
+                    &:hover {
+                      background-color: #4d4d4d;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

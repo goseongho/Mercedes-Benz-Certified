@@ -1,0 +1,619 @@
+@import "reset", "variable", "font";
+
+* {
+  font-family: $primary-font;
+  font-size: 18px;
+}
+// 스크롤 없애는 기능 7~11번 줄 까지
+body {
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.intro_wrap {
+  position: relative;
+  .intro_first {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    right: 0;
+    opacity: 1;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  span {
+    position: absolute;
+    bottom: 120px;
+    color: $pale-gray;
+    font-family: $logo-font;
+    font-size: $small;
+  }
+
+  .intro_second {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    right: 0;
+    background-color: #000;
+    opacity: 1;
+    /* 제자리로 돌아오는 값 롸이트:0 */
+    right: 0;
+    animation: sildetwo 4s ease-in-out;
+    /*backwards 멈춰있는거*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @keyframes sildetwo {
+      0% {
+        right: -720px;
+        opacity: 0;
+      }
+      30% {
+        right: -720px;
+        opacity: 0;
+      }
+      100% {
+        right: 0;
+        opacity: 1;
+      }
+    }
+
+    .second_box {
+      display: flex;
+      opacity: 0;
+      position: relative;
+      animation: secondbox 6s;
+
+      @keyframes secondbox {
+        0% {
+          opacity: 1;
+        }
+        70% {
+          opacity: 1;
+        }
+        80% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      .intro_second_logo {
+        animation: secondlogo 3s ease;
+        @keyframes secondlogo {
+          0% {
+            opacity: 1;
+          }
+          20% {
+            opacity: 0.8;
+          }
+          40% {
+            opacity: 0.6;
+          }
+          60% {
+            opacity: 0.4;
+          }
+          80% {
+            opacity: 0.2;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+      }
+      .logo_line {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: -500%;
+        width: 100%;
+        height: 100%;
+        border-top: 1px solid #fff;
+        border-bottom: 2px solid rgb(255, 255, 255);
+        animation: tireLine 1s;
+        animation-delay: 3s;
+
+        @keyframes tireLine {
+          0% {
+            opacity: 0;
+            transform: translateX(-500%);
+          }
+          90% {
+            opacity: 0.7;
+            transform: translateX(800%);
+          }
+          95% {
+            opacity: 0.5;
+            transform: translateX(800%);
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+      }
+      span {
+        position: absolute;
+        color: $pale-gray;
+        font-family: $logo-font;
+        font-size: $small;
+        bottom: 0;
+      }
+    }
+    .second_logo {
+      position: absolute;
+      img {
+        opacity: 0;
+        animation: logorotate 5s;
+        animation-delay: 2.5s;
+      }
+      @keyframes logorotate {
+        0% {
+          opacity: 0;
+        }
+        40% {
+          opacity: 0;
+        }
+        60% {
+          opacity: 0;
+        }
+        65% {
+          opacity: 1;
+          transform: rotate(180deg);
+        }
+        70% {
+          opacity: 0.8;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+.intro_third {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100vh;
+  background-color: $white;
+  display: flex;
+  /*시간 늦추기*/
+  animation: thirdDisplay 10s ease backwards;
+  @keyframes thirdDisplay {
+    0% {
+      opacity: 0;
+    }
+
+    80% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+  .sell,
+  .buy {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: inherit;
+  }
+  .sell {
+    border-right: 1px solid rgb(243, 242, 242);
+    background: $white;
+    transition: 0.35s;
+    &:hover {
+      background: url(../img/intro/sell.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      .sell_text {
+        margin-top: -90px;
+        .sell_Btn {
+          transition: 0.3s;
+          opacity: 1;
+          border: 1px solid $white;
+          color: $white;
+        }
+        h4 {
+          color: $white;
+        }
+      }
+    }
+    .sell_text {
+      position: relative;
+      margin-top: 130px;
+      transition: 0.25s;
+      span {
+        font-size: $strong;
+        color: $turquoise;
+        font-weight: $bold;
+      }
+      h4 {
+        padding-top: 30px;
+        font-size: $h3;
+        color: $light-black;
+        font-weight: $bold;
+        line-height: 46px;
+      }
+      .sell_Btn {
+        opacity: 0;
+        position: relative;
+        display: inline-block;
+        font-size: 1rem;
+        background-color: transparent;
+        color: $white;
+        padding: 0.65rem 4rem;
+        overflow: hidden;
+        margin-top: 80px;
+        cursor: pointer;
+        &:hover:before {
+          clip-path: circle(500px at left center);
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: $white;
+          clip-path: circle(0 at left center);
+          transition: 1s ease-out;
+        }
+        &:hover span {
+          color: $black;
+        }
+        /*마우스오버시 버튼 보이면서 올라감*/
+        span {
+          color: $white;
+          position: relative;
+          z-index: 1;
+          transition: 1.2s;
+        }
+      }
+    }
+  }
+  .buy {
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    background-color: $white;
+    transition: 0.35s !important;
+    &:hover {
+      background-image: url(../img/intro/buy-bg.png);
+      background-size: cover;
+      animation: buybg linear 1s;
+      @keyframes buybg {
+        0% {
+          opacity: 0%;
+        }
+        25% {
+          opacity: 25%;
+        }
+        50% {
+          opacity: 50%;
+        }
+        75% {
+          opacity: 75%;
+        }
+        100% {
+          opacity: 100%;
+        }
+      }
+      .buy_ligthbox {
+        margin-top: 350px;
+        display: block;
+      }
+      .buy_text {
+        margin-top: -250px;
+      }
+    }
+    .buy_text {
+      position: absolute;
+      span {
+        font-size: 20px;
+        color: $turquoise;
+        font-weight: $bold;
+      }
+      h4 {
+        padding-top: 30px;
+        font-size: 40px;
+        color: $light-black;
+        font-weight: $bold;
+        line-height: 46px;
+      }
+    }
+    /*마우스 호버시 생김*/
+    .buy_ligthbox {
+      display: none;
+      position: relative;
+      height: auto;
+      width: 100%;
+      .benz_go {
+        cursor: pointer;
+        display: block;
+        padding-bottom: 70px;
+        color: $dark-gray;
+        &:hover {
+          color: rgb(51, 51, 175);
+          text-decoration: underline;
+        }
+        &:hover i {
+          color: rgb(51, 51, 175);
+          text-decoration: underline;
+        }
+        i {
+          position: relative;
+          color: $light-black;
+          &::after {
+            content: url(../img/intro/touchCursor.svg);
+            width: 30px;
+            height: 35px;
+            position: absolute;
+            left: 5px;
+            bottom: -28px;
+            z-index: 2;
+            animation: clickCursor 5s 1s infinite;
+            @keyframes clickCursor {
+              0% {
+                opacity: 1;
+              }
+              15% {
+                opacity: 0.5;
+              }
+              30% {
+                opacity: 1;
+              }
+              45% {
+                opacity: 0.5;
+              }
+              60% {
+                opacity: 1;
+              }
+              75% {
+                opacity: 0.5;
+              }
+              90% {
+                opacity: 1;
+              }
+              100% {
+                opacity: 0.5;
+              }
+            }
+          }
+        }
+      }
+    }
+    .buy_all_car {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-30%);
+      display: flex;
+      a {
+        width: 600px;
+        height: 200px;
+        background-image: url(../img/intro/intro_car-all.png);
+        background-size: cover;
+        transition: 0.35s ease-in-out;
+        &:hover {
+          background-image: url(../img/intro/ligth_on.png);
+          background-size: cover;
+        }
+      }
+    }
+    h6 {
+      margin-top: 230px;
+      color: $dark-gray;
+    }
+  }
+}
+//모바일영역
+.M_intro_third {
+  display: none !important;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .sell {
+    height: 50vh !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    background: url(../img/intro/sell.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .sell_text {
+      span {
+        // 내차팔기
+        font-size: $p;
+        color: $turquoise;
+        font-weight: $bold;
+      }
+      h4 {
+        margin-top: 15px;
+        margin-bottom: 40px;
+        font-size: $h4;
+        color: $white;
+        font-weight: $bold;
+        line-height: 40px;
+      }
+      //시세조회하기 버튼
+      .sell_Btn {
+        border: 1px solid $white;
+        font-size: $strong;
+        background-color: transparent;
+        color: $white !important;
+        padding: 0.5rem 3rem;
+        cursor: pointer;
+        position: relative;
+        transition: 0.3s;
+        &:hover {
+          background-color: $light-gray;
+          &:hover span {
+            color: $black;
+          }
+        }
+        span {
+          color: $white;
+        }
+        //   &:hover:before{
+        clip-path: circle(400px at left center);
+        //  }
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: $white;
+          clip-path: circle(0 at left center);
+          transition: 1s ease-out;
+        }
+      }
+    }
+  }
+  .buy {
+    height: 50vh !important;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/intro/buy-bg.png);
+    background-size: cover;
+    .buy_text {
+      position: absolute;
+      top: 15%;
+      span {
+        font-size: $p;
+        color: $turquoise;
+        font-weight: $bold;
+      }
+      h4 {
+        padding-top: 15px;
+        font-size: $h4;
+        color: $light-black;
+        font-weight: $bold;
+        line-height: 35px;
+      }
+    }
+    .buy_ligthbox {
+      .benz_go {
+        display: block;
+        margin-top: 35px;
+        color: $dark-gray;
+        font-size: $h6;
+        font-weight: $bold;
+        transition: 0.3s;
+        &:hover {
+          color: rgb(51, 51, 175);
+          text-decoration: underline;
+        }
+        &:hover i {
+          color: rgb(51, 51, 175);
+          text-decoration: underline;
+        }
+        i {
+          color: $gray;
+          position: relative;
+          &::after {
+            content: url(../img/intro/touchCursor.svg);
+            width: 30px;
+            height: 35px;
+            position: absolute;
+            left: 5px;
+            bottom: -28px;
+            z-index: 2;
+            animation: clickCursor 5s 1s infinite;
+            @keyframes clickCursor {
+              0% {
+                opacity: 1;
+              }
+              15% {
+                opacity: 0.5;
+              }
+              30% {
+                opacity: 1;
+              }
+              45% {
+                opacity: 0.5;
+              }
+              60% {
+                opacity: 1;
+              }
+              75% {
+                opacity: 0.5;
+              }
+              90% {
+                opacity: 1;
+              }
+              100% {
+                opacity: 0.5;
+              }
+            }
+          }
+        }
+      }
+      .buy_all_car {
+        a {
+          position: absolute;
+          top: 78%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 75%;
+          height: 120px;
+          background-image: url(../img/intro/intro_car-all.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          animation: M_car_on 2.5s linear infinite;
+          @keyframes M_car_on {
+            0% {
+            }
+            50% {
+              background-image: url(../img/intro/ligth_on.png);
+            }
+            100% {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//모바일
+@media screen and (max-width: 780px) {
+  .intro_wrap {
+    .intro_first {
+      display: none;
+    }
+    .intro_second {
+      display: none;
+    }
+  }
+  .intro_third {
+    display: none;
+  }
+  .M_intro_third {
+    display: block !important;
+  }
+}

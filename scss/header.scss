@@ -1,0 +1,281 @@
+@import "reset", "font", "variable";
+//header
+.header {
+  max-width: 1920px;
+  width: 100%;
+  height: 65px;
+  line-height: 65px;
+  padding: 0 9rem;
+  box-sizing: border-box;
+  background-color: #000;
+  position: fixed;
+  z-index: 3;
+  &.active {
+    background-color: #00000030;
+  }
+  .header_in {
+    height: inherit;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    .header_logo {
+      a {
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        img {
+          width: 30px;
+          height: 30px;
+        }
+        p {
+          font-size: 20px;
+          font-family: $logo-font;
+        }
+      }
+    }
+    .nav {
+      .nav_wrap {
+        display: flex;
+        text-align: center;
+        li {
+          width: 110px;
+          &:hover a::after {
+            opacity: 1;
+          }
+          .last2 {
+            margin-left: 15px;
+            &::after {
+              content: "";
+              width: 100px;
+              height: 2px;
+              background-color: #fff;
+              display: block;
+              position: absolute;
+              bottom: 0.5px;
+              left: -6px;
+              opacity: 0;
+            }
+          }
+          .last {
+            margin-right: 15px;
+            &::after {
+              content: "";
+              width: 100px;
+              height: 2px;
+              background-color: #fff;
+              display: block;
+              position: absolute;
+              bottom: 0.5px;
+              left: 0px;
+              opacity: 0;
+            }
+          }
+          #pageMove {
+            font-weight: $bold;
+          }
+          a {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            position: relative;
+            display: block;
+            margin-right: 10px;
+            &::after {
+              content: "";
+              height: 2px;
+              background-color: #fff;
+              display: block;
+              position: absolute;
+              bottom: 0.5px;
+              left: 3px;
+              opacity: 0;
+              animation: navLine linear 1s infinite;
+              @keyframes navLine {
+                from {
+                  width: 0;
+                }
+                to {
+                  width: 100px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .header_icon {
+      align-self: center;
+      .icon_wrap {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        a {
+          i {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+//site_map
+.site_map {
+  display: none;
+}
+//main
+.main {
+  max-width: 1920px;
+  height: 100vh;
+  background-image: url(../img/main/bg_visual.jpg);
+  background-color: #00000010;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-size: cover;
+  .main_in {
+    margin: auto;
+    height: inherit;
+    .main_title {
+      padding-left: 17.5rem;
+      padding-top: 8rem;
+      line-height: 50px;
+      color: $white;
+      text-shadow: 0 0 0.3rem $dark-black;
+      h3 {
+        width: auto;
+        font-size: $h3;
+        font-weight: $medium;
+        letter-spacing: -0.1rem;
+      }
+      p {
+        font-size: $h6;
+        margin-left: 5px;
+      }
+    }
+    .main_swiper {
+      width: 100%;
+      margin: auto;
+      color: $white;
+      .mainSwiper {
+        .swiper-wrapper {
+          text-align: center;
+          .swiper-slide {
+            height: auto;
+            margin-top: 60px;
+            &-active {
+              margin-left: 10px !important;
+              margin-right: 40px !important;
+              & .car_name {
+                display: none;
+              }
+              & .car_content {
+                display: block !important;
+              }
+              & .img_wrap {
+                height: 400px;
+                text-align: center;
+                position: relative;
+                & img {
+                  width: 430px !important;
+                  position: absolute;
+                  left: 50%;
+                  transform: translateX(-50%);
+                }
+              }
+            }
+            .car_name {
+              margin-top: 4rem;
+              font-size: $h6;
+              font-family: $logo-font;
+            }
+            .img_wrap {
+              text-align: center;
+              img {
+                width: 70%;
+                margin-top: 70px;
+              }
+            }
+            .car_content {
+              display: none;
+              h2 {
+                font-family: $logo-font;
+                font-size: $h3;
+                font-weight: 300;
+              }
+             a{
+              color: $white;
+              p {
+                margin-top: 30px;
+                font-size: $small;
+                cursor: pointer;
+                font-weight: $medium;
+              }
+             }
+              .button {
+                color: $white;
+                background-color: transparent;
+                border: 1px solid $white;
+                position: relative;
+                margin-top: 25px;
+                font-size: $small;
+                padding: 1rem 2rem;
+                overflow: hidden;
+                position: relative;
+                display: inline-block;
+                &:hover span {
+                  color: $black;
+                }
+                span {
+                  position: relative;
+                  z-index: 1;
+                }
+                &:hover:before {
+                  clip-path: circle(500px at left center);
+                }
+                &::before {
+                  content: "";
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  width: 100%;
+                  height: 100%;
+                  background-color: $white;
+                  clip-path: circle(0 at left center);
+                  transition: 0.5s ease-out;
+                }
+              }
+            }
+          }
+        }
+        .swiper-button-next {
+          color: $dark-clouds;
+          background-color: #00000085;
+          padding: 15px 5px;
+          border-radius: 0.5rem;
+          box-shadow: 0 0 5px $gray;
+          position: absolute;
+          left: 63%;
+          top: 34%;
+          &::after {
+            font-size: 1.1rem !important;
+            font-weight: $bold !important;
+          }
+        }
+        .swiper-button-prev {
+          color: $dark-clouds;
+          background-color: #00000085;
+          padding: 15px 5px;
+          border-radius: 0.5rem;
+          box-shadow: 0 0 5px $gray;
+          position: absolute;
+          left: 36%;
+          top: 34%;
+          &::after {
+            font-size: 1.1rem !important;
+            font-weight: $bold !important;
+          }
+        }
+      }
+    }
+  }
+}

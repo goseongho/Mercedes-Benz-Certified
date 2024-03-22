@@ -1,0 +1,272 @@
+@charset "UTF-8";
+/* ===========reset=========== */
+@import url("https://webfontworld.github.io/GothicA1/GothicA1.css");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap");
+@import url("https://webfontworld.github.io/Cafe24SsurroundAir/Cafe24SsurroundAir.css");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+body {
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+ol, ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+/*google WEB FONT Gothic A1*/
+/*google WEB FONT Inria Serif*/
+/* 폰트어썸 아이콘cdn */
+/*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />*/
+/*Font Family*/
+/*Font Size*/
+/*Font Weight*/
+/* Setting Variables : Object Color */
+/* Setting Variables : Text Color */
+.salesMain_wrap {
+  max-width: 1920px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.salesMain_wrap .salesMain_left {
+  position: relative;
+  flex: 1;
+}
+.salesMain_wrap .salesMain_left .salesMain_left_in {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  width: 600px;
+  height: 500px;
+  box-sizing: border-box;
+}
+.salesMain_wrap .salesMain_left .salesMain_left_in .salesMain_left_title {
+  line-height: 40px;
+}
+.salesMain_wrap .salesMain_left .salesMain_left_in .salesMain_left_title p {
+  color: #5f5f5f;
+}
+.salesMain_wrap .salesMain_left .salesMain_left_in .salesMain_left_title h3 {
+  color: #191919;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.salesMain_wrap .salesMain_left .salesMain_left_in .salesMain_icon_wrap {
+  margin-top: 180px;
+  display: flex;
+}
+.salesMain_wrap .salesMain_left .salesMain_left_in .salesMain_icon_wrap .salesMain_icon {
+  position: relative;
+  flex: 1;
+  color: #333;
+  text-align: center;
+  line-height: 30px;
+}
+.salesMain_wrap .salesMain_left .salesMain_left_in .salesMain_icon_wrap .salesMain_icon h5 {
+  color: #04589b;
+  font-weight: 700;
+}
+.salesMain_wrap .salesMain_left .salesMain_left_in .salesMain_icon_wrap .salesMain_icon:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100px;
+  width: 100px;
+  background-image: url(../img/salesMain/ico_sale_benefit1.png);
+  margin-top: -160px;
+}
+.salesMain_wrap .salesMain_left .salesMain_left_in .salesMain_icon_wrap .salesMain_icon:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -160px;
+  height: 100px;
+  width: 100px;
+  background-image: url(../img/salesMain/ico_sale_benefit2.png);
+}
+.salesMain_wrap .salesMain_left .salesMain_left_in .salesMain_icon_wrap .salesMain_icon:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -160px;
+  height: 100px;
+  width: 100px;
+  background-image: url(../img/salesMain/ico_sale_benefit3.png);
+}
+.salesMain_wrap .salesMain_left .salesMain_left_in .alesMain_guid {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: inherit;
+}
+.salesMain_wrap .salesMain_left .salesMain_left_in .alesMain_guid a {
+  margin-right: 20px;
+  color: #5f5f5f;
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+.salesMain_wrap .salesMain_right {
+  background-color: #cad6d8;
+  flex: 1;
+  position: relative;
+}
+.salesMain_wrap .salesMain_right .salesMain_right_in {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+}
+.salesMain_wrap .salesMain_right .salesMain_right_in .salesMain_right_title h2 {
+  opacity: 1;
+  color: #191919;
+  font-size: 2.2rem;
+  font-weight: 700;
+  animation: ani01 linear 1s;
+}
+@keyframes ani01 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  30% {
+    opacity: 0.3;
+    transform: translateY(5px);
+  }
+  40% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.salesMain_wrap .salesMain_right .salesMain_right_in .salesMain_right_title h4 {
+  margin-top: 30px;
+  color: #333;
+  font-weight: 700;
+  line-height: 22px;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+  animation: ani02 linear 2.5s;
+}
+@keyframes ani02 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.salesMain_wrap .salesMain_right .salesMain_right_in .salesMain_right_title h5 {
+  line-height: 60px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  animation: ani03 linear 5s;
+}
+@keyframes ani03 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  30% {
+    opacity: 0.3;
+    transform: translateY(5px);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.salesMain_wrap .salesMain_right .salesMain_right_in .salesMain_right_title input {
+  color: #fff;
+  background-color: transparent;
+  width: 150px;
+  font-weight: 700;
+  font-size: 1.4rem;
+  border-bottom: 3px solid #333;
+  outline: none;
+}
+.salesMain_wrap .salesMain_right .salesMain_right_in .salesMain_right_title input::placeholder {
+  color: #eee;
+}
+.salesMain_wrap .salesMain_right .salesMain_right_in .Detailed {
+  margin-top: 30px;
+  line-height: 20px;
+  color: #8c8c8c;
+  font-size: 14px;
+  animation: ani04 linear 6s;
+}
+@keyframes ani04 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  30% {
+    opacity: 0.3;
+    transform: translateY(5px);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}

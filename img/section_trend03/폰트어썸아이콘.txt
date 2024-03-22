@@ -1,0 +1,4 @@
+trend-icon
+
+체크 아이콘 <i class="fa-solid fa-check"></i>
+자동차 이미지 https://www.mercedes-benz.com/en/innovation/concept-cars/vision-avtr/

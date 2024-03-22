@@ -1,0 +1,251 @@
+@charset "UTF-8";
+/* ===========reset=========== */
+@import url("https://webfontworld.github.io/GothicA1/GothicA1.css");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap");
+@import url("https://webfontworld.github.io/Cafe24SsurroundAir/Cafe24SsurroundAir.css");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+body {
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+ol, ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+/*google WEB FONT Gothic A1*/
+/*google WEB FONT Inria Serif*/
+/* 폰트어썸 아이콘cdn */
+/*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />*/
+/*Font Family*/
+/*Font Size*/
+/*Font Weight*/
+/* Setting Variables : Object Color */
+/* Setting Variables : Text Color */
+.iw_bubble {
+  padding: 0.8rem 1.7rem;
+  border-width: 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #045762;
+}
+
+.map {
+  max-width: 1920px;
+  width: 100%;
+  height: 1070px;
+  background-color: #cad6d8;
+}
+.map .map_in {
+  width: 1500px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.map .map_in .map_left .map_title {
+  padding-top: 90px;
+}
+.map .map_in .map_left .map_title h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.map .map_in .map_left .map_title .map_subtitle {
+  padding-top: 30px;
+  position: relative;
+  z-index: 1;
+}
+.map .map_in .map_left .map_title .map_subtitle::before {
+  content: "";
+  background: url(../img/map/Group\ 314.png) no-repeat;
+  width: 1897px;
+  height: 46px;
+  position: absolute;
+  bottom: -15px;
+  left: -970px;
+  z-index: -1;
+}
+.map .map_in .map_left .map_title .map_subtitle a {
+  color: #fff;
+  font-size: 0.9rem;
+}
+.map .map_in .map_left .map_title .map_subtitle a:nth-child(1) {
+  font-family: "Inria Serif";
+}
+.map .map_in .map_left .map_title .map_subtitle a:nth-child(2) {
+  padding-left: 60px;
+}
+.map .map_in .map_left .map_title .map_subtitle a:nth-child(3) {
+  padding-left: 50px;
+}
+.map .map_in .map_left .map_api {
+  padding-top: 60px;
+}
+.map .map_in .map_left .map_api #map {
+  cursor: pointer;
+}
+.map .map_in .map_right {
+  padding-top: 150px;
+  width: 440px;
+}
+.map .map_in .map_right .map_right_in .map_right_title h3 {
+  font-size: 1.65rem;
+  font-weight: bold;
+  position: relative;
+}
+.map .map_in .map_right .map_right_in .map_right_title h3::before {
+  content: "";
+  width: 440px;
+  height: 1px;
+  background-color: #5a5a5a;
+  position: absolute;
+  top: 40px;
+  display: block;
+}
+.map .map_in .map_right .map_right_in .map_location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+}
+.map .map_in .map_right .map_right_in .map_location .location span {
+  font-size: 0.9rem;
+  color: #404040;
+}
+.map .map_in .map_right .map_right_in .map_location .location_name {
+  margin-bottom: 10px;
+}
+.map .map_in .map_right .map_right_in .map_location .location_name select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.2rem;
+  background: url(../img/map/input_arrow.svg) no-repeat 95% 50%;
+  background-size: 8%;
+  font-size: 0.9rem;
+  border: 1.5px solid #01252a;
+  height: 40px;
+  width: 180px;
+  outline: none;
+  color: #5f5f5f;
+  font-weight: 500;
+  padding: 0.5rem;
+  background-color: transparent;
+}
+.map .map_in .map_right .map_right_in .map_location .location_name select option {
+  color: #fff;
+  font-size: 0.9rem;
+  background-color: #01252a;
+}
+.map .map_in .map_right .map_right_in .map_impo_wrap {
+  overflow-y: scroll;
+}
+.map .map_in .map_right .map_right_in .map_impo_wrap .map_impo_in #test_1 {
+  display: block;
+}
+.map .map_in .map_right .map_right_in .map_impo_wrap .map_impo_in .map_impo {
+  padding-top: 10px;
+  display: none;
+  height: 700px;
+}
+.map .map_in .map_right .map_right_in .map_impo_wrap .map_impo_in .map_impo .impo_items {
+  width: 96%;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+}
+.map .map_in .map_right .map_right_in .map_impo_wrap .map_impo_in .map_impo .impo_items .impo_img {
+  text-align: center;
+}
+.map .map_in .map_right .map_right_in .map_impo_wrap .map_impo_in .map_impo .impo_items .impo_img img {
+  text-align: center;
+  width: 410px;
+  display: none;
+  border-radius: 5px 5px 0px 0px;
+}
+.map .map_in .map_right .map_right_in .map_impo_wrap .map_impo_in .map_impo .impo_items .impo_item .impo_name {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+.map .map_in .map_right .map_right_in .map_impo_wrap .map_impo_in .map_impo .impo_items .impo_item .impo_name h3 {
+  cursor: pointer;
+  color: #000;
+  font-weight: 700;
+}
+.map .map_in .map_right .map_right_in .map_impo_wrap .map_impo_in .map_impo .impo_items .impo_item .impo_detail .impo_locate {
+  padding-left: 30px;
+  padding-top: 15px;
+}
+.map .map_in .map_right .map_right_in .map_impo_wrap .map_impo_in .map_impo .impo_items .impo_item .impo_detail .impo_locate .fa-location-dot {
+  color: #045762;
+}
+.map .map_in .map_right .map_right_in .map_impo_wrap .map_impo_in .map_impo .impo_items .impo_item .impo_detail .impo_locate span {
+  padding-left: 5px;
+  font-size: 0.9rem;
+  color: #5f5f5f;
+}
+.map .map_in .map_right .map_right_in .map_impo_wrap .map_impo_in .map_impo .impo_items .impo_item .impo_detail .impo_num {
+  padding-left: 30px;
+  padding-top: 10px;
+}
+.map .map_in .map_right .map_right_in .map_impo_wrap .map_impo_in .map_impo .impo_items .impo_item .impo_detail .impo_num .fa-phone {
+  color: #045762;
+}
+.map .map_in .map_right .map_right_in .map_impo_wrap .map_impo_in .map_impo .impo_items .impo_item .impo_detail .impo_num span {
+  padding-left: 5px;
+  font-size: 0.9rem;
+  color: #5f5f5f;
+}
+.map .map_in .map_right .map_right_in .map_impo_wrap .map_impo_in .map_impo .impo_items .impo_button {
+  padding-left: 190px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.map .map_in .map_right .map_right_in .map_impo_wrap .map_impo_in .map_impo .impo_items .impo_button a {
+  padding: 0.3rem 1.6rem;
+  font-size: 0.6rem;
+  color: #fff;
+  background-color: #000;
+  transition: 0.5s;
+}
+.map .map_in .map_right .map_right_in .map_impo_wrap .map_impo_in .map_impo .impo_items .impo_button a:hover {
+  background-color: #4d4d4d;
+}

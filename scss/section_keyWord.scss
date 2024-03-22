@@ -1,0 +1,62 @@
+@import "reset", "variable", "font";
+
+.section_keyWord {
+  max-width: 1920px;
+  height: 324px;
+  padding: 4rem 0;
+  box-sizing: border-box;
+  background: linear-gradient(
+    90deg,
+    rgba(37, 37, 37, 1) 0%,
+    rgba(36, 36, 38, 1) 50%,
+    rgba(25, 25, 25, 1) 65%,
+    rgba(21, 21, 21, 1) 100%
+  );
+  .keyWord_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    .keyWord_title {
+      h3 {
+        font-size: $h3;
+        font-weight: $bold;
+        line-height: 1.5;
+        color: $white;
+        z-index: 10;
+        position: relative;
+      }
+      &::after {
+        content: "";
+        background-image: url(../img/section_keyWord/sharp.svg);
+        width: 95px;
+        height: 110px;
+        position: absolute;
+        top: -30px;
+        left: -50px;
+        z-index: 1;
+      }
+    }
+    .keyWord_wrap {
+      width: 710px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 0.5rem;
+      a {
+        border: 3px solid $gray;
+        color: $gray;
+        font-size: $h5;
+        font-weight: $bold;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        transition: 0.3s;
+        &:hover {
+          border: 3px solid $black;
+          box-shadow: 0 0 7px $gray;
+          background-color: $black;
+          color: $white;
+        }
+      }
+    }
+  }
+}

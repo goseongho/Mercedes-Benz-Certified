@@ -1,0 +1,5 @@
+trend02 아이콘
+
+당사자거래 아이콘 <i class="fa-regular fa-user"></i>
+사업자 아이콘 <i class="fa-regular fa-house-chimney"></i>
+퍼센트 아이콘 <i class="fa-solid fa-caret-down"></i>

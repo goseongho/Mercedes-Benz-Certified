@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../img/header/header-logo.svg">
+  <title>Mercedes-Benz Certified</title>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- fontAwesome Icon Cdn-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=igg1udetsa"
+    ;></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="header_in">
+      <div class="header_logo">
+        <a href="../mainPage.html">
+          <img src="../img/header/header-logo.svg" alt="mainLogo" />
+          <p>Mercedes-Benz Certified</p>
+        </a>
+      </div>
+      <div class="nav">
+        <ul class="nav_wrap">
+          <li><a href="../mainPage.html" id="pageMove">내차사기</a></li>
+          <li><a href="./salesMain.html" id="pageMove">내차팔기</a></li>
+          <li><a href="#none">인증 중고차</a></li>
+          <li><a href="#none" class="last2" id="pageMove">시승신청</a></li>
+          <li><a href="#none" class="last">기획전</a></li>
+        </ul>
+      </div>
+      <div class="header_icon">
+        <div class="icon_wrap">
+          <a href="#none"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#none"><i class="fa-regular fa-star"></i> </a>
+          <a href="#none"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="#none"><i class="fa-solid fa-user"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="trigger">
+    <span class="line line1"></span>
+    <span class="line line2"></span>
+    <span class="line line3"></span>
+  </div>
+  <!-- sitemap -->
+  <div class="site_map">
+    <div class="site_map_wrap">
+      <div class="site_map_in">
+        <div class="site_logo">
+          <a href="#none">
+            <img src="../img/header/header-logo.svg" alt="사이트맵로고">
+          </a>
+        </div>
+        <li class="sub_menu">
+          <a href="#none" id="goOtherPage">거래하기</a>
+          <i class="fa-solid fa-chevron-down" id="arrow"></i>
+        </li>
+        <ul class="mobile_subtab">
+          <li><a href="../mainPage.html" id="goOtherPage">내차사기</a></li>
+          <li><a href="./salesMain.html" id="goOtherPage">내차팔기</a></li>
+        </ul>
+        <li class="sub_menu">
+          <a href="#none">EQ-Car</a>
+          <i class="fa-solid fa-chevron-down" id="arrow"></i>
+        </li>
+        <ul class="mobile_subtab">
+          <li><a href="#none">EQ 테크놀로지</a></li>
+          <li><a href="#none">EQ 서비스</a></li>
+          <li><a href="#none">지속가능성</a></li>
+        </ul>
+        <li class="sub_menu">
+          <a href="#none">인증중고차</a>
+          <i class="fa-solid fa-chevron-down" id="arrow"></i>
+        </li>
+        <ul class="mobile_subtab">
+          <li><a href="#none">엄격한 품질검사</a></li>
+          <li><a href="#none">서비스 품질 1위</a></li>
+          <li><a href="#none">안전한 매물</a></li>
+          <li><a href="#none">무상보증 프로그램</a></li>
+          <li><a href="#none">제휴혜택</a></li>
+          <li><a href="#none">24시간 긴급 출동 서비스</a></li>
+        </ul>
+        <li class="sub_menu">
+          <a href="#none" id="goOtherPage">시승신청</a>
+          <i class="fa-solid fa-chevron-down" id="arrow"></i>
+        </li>
+        <ul class="mobile_subtab">
+          <li><a href="#" id="goOtherPage">전시장 찾기</a></li>
+          <li><a href="#none">시승 상담 신청</a></li>
+        </ul>
+        <li class="sub_menu">
+          <a href="#none">프로모션&뉴스</a>
+          <i class="fa-solid fa-chevron-down" id="arrow"></i>
+        </li>
+        <ul class="mobile_subtab">
+          <li><a href="#none">이달의 프로모션</a></li>
+        </ul>
+      </div>
+      <div class="site_map_footer">
+        <div class="site_map_footer_top">
+          <a href="#none">이용약관</a>
+          <a href="#none">고객센터</a>
+        </div>
+        <div class="site_map_footer_bottom">
+          <a href="#none"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#none"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#none"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- map -->
+  <div class="map">
+    <div class="map_in">
+      <div class="map_left">
+        <div class="map_title">
+          <h2>전시장찾기</h2>
+          <div class="map_subtitle">
+            <a href="../mainPage.html">Mercedes-Benz</a>
+            <a href="#none">시승신청</a>
+            <a href="#none">전시장찾기</a>
+          </div>
+        </div>
+        <div class="map_api">
+          <div id="map" style="width:920px; height:710px;"></div>
+        </div>
+      </div>
+      <div class="map_right">
+        <div class="map_right_in">
+          <div class="map_right_title">
+            <h3>전시장검색</h3>
+          </div>
+          <div class="map_location">
+            <div class="location">
+              <span>지역</span>
+            </div>
+            <div class="location_name">
+              <select name="id" onchange="Show_hidden(this.value);">
+                <option value="1">시 / 도 선택</option>
+                <option value="2">서울특별시</option>
+                <option value="3">부산광역시</option>
+                <option value="4">대구광역시</option>
+                <option value="5">대전광역시</option>
+                <option value="6">인천광역시</option>
+                <option value="7">광주광역시</option>
+                <option value="8">울산광역시</option>
+                <option value="9">경기</option>
+                <option value="10">강원</option>
+              </select>
+            </div>
+          </div>
+          <div class="map_impo_wrap">
+            <div class="map_impo_in">
+              <!-- 전체보기 -->
+              <div class="map_impo top_impo" id="test_1">
+                <div class="impo_items_wrap">
+                  <div class="impo_items">
+                    <div class="impo_img">
+                      <img src="../img/map/impo_img01(용산).png" alt="" class="img1">
+                    </div>
+                    <div class="impo_item">
+                      <div class="impo_name">
+                        <img src="../img/map/location-pin.png" alt="">
+                        <h3 onclick='hello()'>용산 전시장</h3>
+                      </div>
+                      <div class="impo_detail">
+                        <div class="impo_locate">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <span>서울특별시 용산구 청파로 74
+                            (04372)
+                          </span>
+                        </div>
+                        <div class="impo_num">
+                          <i class="fa-solid fa-phone"></i>
+                          <span>042-602-2000</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="impo_button">
+                      <a href="#none">위치보기</a>
+                      <a href="#none">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="impo_items_wrap">
+                  <div class="impo_items">
+                    <div class="impo_img">
+                      <img src="../img/map/impo_img02(유성).jpg" alt="" class="img2">
+                    </div>
+                    <div class="impo_item">
+                      <div class="impo_name">
+                        <img src="../img/map/location-pin.png" alt="">
+                        <h3 onclick='hello2()'>대전 유성 전시장</h3>
+                      </div>
+                      <div class="impo_detail">
+                        <div class="impo_locate">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <span>대전광역시 유성구 대학로 62(34185)</span>
+                        </div>
+                        <div class="impo_num">
+                          <i class="fa-solid fa-phone"></i>
+                          <span>042-602-2000</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="impo_button">
+                      <a href="#none">위치보기</a>
+                      <a href="#none">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="impo_items_wrap">
+                  <div class="impo_items">
+                    <div class="impo_img">
+                      <img src="../img/map/impo_img03(대전).png" alt="" class="img3">
+                    </div>
+                    <div class="impo_item">
+                      <div class="impo_name">
+                        <img src="../img/map/location-pin.png" alt="">
+                        <h3 onclick='hello3()'>대전 전시장</h3>
+                      </div>
+                      <div class="impo_detail">
+                        <div class="impo_locate">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <span>대전광역시 대덕구 한밭대로 1138
+                            (34427)
+                          </span>
+                        </div>
+                        <div class="impo_num">
+                          <i class="fa-solid fa-phone"></i>
+                          <span>042-363-2000</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="impo_button">
+                      <a href="#none">위치보기</a>
+                      <a href="#none">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="impo_items_wrap">
+                  <div class="impo_items">
+                    <div class="impo_img">
+                      <img src="../img/map/impo_img04(해운대).jpg" alt="" class="img4">
+                    </div>
+                    <div class="impo_item">
+                      <div class="impo_name">
+                        <img src="../img/map/location-pin.png" alt="">
+                        <h3 onclick='hello4()'>해운대 전시장</h3>
+                      </div>
+                      <div class="impo_detail">
+                        <div class="impo_locate">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <span>부산광역시 해운대구 해운대로 277
+                            (48061)</span>
+                        </div>
+                        <div class="impo_num">
+                          <i class="fa-solid fa-phone"></i>
+                          <span>051-709-6300</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="impo_button">
+                      <a href="#none">위치보기</a>
+                      <a href="#none">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="impo_items_wrap">
+                  <div class="impo_items">
+                    <div class="impo_img">
+                      <img src="../img/map/impo_img05(금정).jpg" alt="" class="img5">
+                    </div>
+                    <div class="impo_item">
+                      <div class="impo_name">
+                        <img src="../img/map/location-pin.png" alt="">
+                        <h3 onclick='hello5()'>금정 전시장</h3>
+                      </div>
+                      <div class="impo_detail">
+                        <div class="impo_locate">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <span>부산광역시 금정구 중앙대로 1912
+                            (46249)
+                          </span>
+                        </div>
+                        <div class="impo_num">
+                          <i class="fa-solid fa-phone"></i>
+                          <span>051-710-2369</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="impo_button">
+                      <a href="#none">위치보기</a>
+                      <a href="#none">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="impo_items_wrap">
+                  <div class="impo_items">
+                    <div class="impo_img">
+                      <img src="../img/map/impo_img07(대구).png" alt="" class="img22">
+                    </div>
+                    <div class="impo_item">
+                      <div class="impo_name">
+                        <img src="../img/map/location-pin.png" alt="">
+                        <h3 onclick='hello22()'>대구 전시장</h3>
+                      </div>
+                      <div class="impo_detail">
+                        <div class="impo_locate">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <span>대구 수성구 동대구로 150(42110)
+                          </span>
+                        </div>
+                        <div class="impo_num">
+                          <i class="fa-solid fa-phone"></i>
+                          <span>053-629-9000</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="impo_button">
+                      <a href="#none">위치보기</a>
+                      <a href="#none">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="impo_items_wrap">
+                  <div class="impo_items">
+                    <div class="impo_img">
+                      <img src="../img/map/impo_img06(인천).png" alt="" class="img23">
+                    </div>
+                    <div class="impo_item">
+                      <div class="impo_name">
+                        <img src="../img/map/location-pin.png" alt="">
+                        <h3 onclick='hello23()'>인천 전시장</h3>
+                      </div>
+                      <div class="impo_detail">
+                        <div class="impo_locate">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <span>인천 남동구 인주대로 651(21565)
+                          </span>
+                        </div>
+                        <div class="impo_num">
+                          <i class="fa-solid fa-phone"></i>
+                          <span>032-770-8800</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="impo_button">
+                      <a href="#none">위치보기</a>
+                      <a href="#none">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="impo_items_wrap">
+                  <div class="impo_items">
+                    <div class="impo_img">
+                      <img src="../img/map/impo_img08(인천송도).jpg" alt="" class="img24">
+                    </div>
+                    <div class="impo_item">
+                      <div class="impo_name">
+                        <img src="../img/map/location-pin.png" alt="">
+                        <h3 onclick='hello24()'>인천 송도 전시장</h3>
+                      </div>
+                      <div class="impo_detail">
+                        <div class="impo_locate">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <span>인천 연수구 하모니로178번길 6(22011)
+                          </span>
+                        </div>
+                        <div class="impo_num">
+                          <i class="fa-solid fa-phone"></i>
+                          <span>032-860-3300</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="impo_button">
+                      <a href="#none">위치보기</a>
+                      <a href="#none">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 서울 -->
+              <div class="map_impo" id="test_2">
+                <div class="impo_items_wrap">
+                  <div class="impo_items">
+                    <div class="impo_img">
+                      <img src="../img/map/impo_img01(용산).png" alt="" class="img6">
+                    </div>
+                    <div class="impo_item">
+                      <div class="impo_name">
+                        <img src="../img/map/location-pin.png" alt="">
+                        <h3 onclick='hello6()'>용산 전시장</h3>
+                      </div>
+                      <div class="impo_detail">
+                        <div class="impo_locate">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <span>서울특별시 용산구 청파로 74
+                            (04372)
+                          </span>
+                        </div>
+                        <div class="impo_num">
+                          <i class="fa-solid fa-phone"></i>
+                          <span>042-602-2000</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="impo_button">
+                      <a href="#none">위치보기</a>
+                      <a href="#none">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 부산 -->
+              <div class="map_impo" id="test_3">
+                <div class="impo_items_wrap">
+                  <div class="impo_items">
+                    <div class="impo_img">
+                      <img src="../img/map/impo_img04(해운대).jpg" alt="" class="img7">
+                    </div>
+                    <div class="impo_item">
+                      <div class="impo_name">
+                        <img src="../img/map/location-pin.png" alt="">
+                        <h3 onclick='hello7()'>해운대 전시장</h3>
+                      </div>
+                      <div class="impo_detail">
+                        <div class="impo_locate">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <span>부산광역시 해운대구 해운대로 277
+                            (48061)</span>
+                        </div>
+                        <div class="impo_num">
+                          <i class="fa-solid fa-phone"></i>
+                          <span>051-709-6300</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="impo_button">
+                      <a href="#none">위치보기</a>
+                      <a href="#none">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="impo_items_wrap">
+                  <div class="impo_items">
+                    <div class="impo_img">
+                      <img src="../img/map/impo_img05(금정).jpg" alt="" class="img8">
+                    </div>
+                    <div class="impo_item">
+                      <div class="impo_name">
+                        <img src="../img/map/location-pin.png" alt="">
+                        <h3 onclick='hello8()'>금정 전시장</h3>
+                      </div>
+                      <div class="impo_detail">
+                        <div class="impo_locate">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <span>부산광역시 금정구 중앙대로 1912
+                            46249
+                          </span>
+                        </div>
+                        <div class="impo_num">
+                          <i class="fa-solid fa-phone"></i>
+                          <span>051-710-2369</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="impo_button">
+                      <a href="#none">위치보기</a>
+                      <a href="#none">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 대구 -->
+              <div class="map_impo" id="test_4">
+                <div class="impo_items_wrap">
+                  <div class="impo_items">
+                    <div class="impo_img">
+                      <img src="../img/map/impo_img07(대구).png" alt="" class="img9">
+                    </div>
+                    <div class="impo_item">
+                      <div class="impo_name">
+                        <img src="../img/map/location-pin.png" alt="">
+                        <h3 onclick='hello9()'>대구 전시장</h3>
+                      </div>
+                      <div class="impo_detail">
+                        <div class="impo_locate">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <span>대구 수성구 동대구로 150 (42110)
+                          </span>
+                        </div>
+                        <div class="impo_num">
+                          <i class="fa-solid fa-phone"></i>
+                          <span>053-629-9000</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="impo_button">
+                      <a href="#none">위치보기</a>
+                      <a href="#none">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 대전 -->
+              <div class="map_impo" id="test_5">
+                <div class="impo_items_wrap">
+                  <div class="impo_items">
+                    <div class="impo_img">
+                      <img src="../img/map/impo_img02(유성).jpg" alt="" class="img10">
+                    </div>
+                    <div class="impo_item">
+                      <div class="impo_name">
+                        <img src="../img/map/location-pin.png" alt="">
+                        <h3 onclick='hello10()'>대전 유성 전시장</h3>
+                      </div>
+                      <div class="impo_detail">
+                        <div class="impo_locate">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <span>대전광역시 유성구 대학로 62(34185)</span>
+                        </div>
+                        <div class="impo_num">
+                          <i class="fa-solid fa-phone"></i>
+                          <span>042-602-2000</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="impo_button">
+                      <a href="#none">위치보기</a>
+                      <a href="#none">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="impo_items_wrap">
+                  <div class="impo_items">
+                    <div class="impo_img">
+                      <img src="../img/map/impo_img03(대전).png" alt="" class="img11">
+                    </div>
+                    <div class="impo_item">
+                      <div class="impo_name">
+                        <img src="../img/map/location-pin.png" alt="">
+                        <h3 onclick='hello11()'>대전 전시장</h3>
+                      </div>
+                      <div class="impo_detail">
+                        <div class="impo_locate">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <span>대전광역시 대덕구 한밭대로 1138
+                            (34427)
+                          </span>
+                        </div>
+                        <div class="impo_num">
+                          <i class="fa-solid fa-phone"></i>
+                          <span>042-363-2000</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="impo_button">
+                      <a href="#none">위치보기</a>
+                      <a href="#none">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 인천 -->
+              <div class="map_impo" id="test_6">
+                <div class="impo_items_wrap">
+                  <div class="impo_items">
+                    <div class="impo_img">
+                      <img src="../img/map/impo_img06(인천).png" alt="" class="img12">
+                    </div>
+                    <div class="impo_item">
+                      <div class="impo_name">
+                        <img src="../img/map/location-pin.png" alt="">
+                        <h3 onclick='hello12()'>인천 전시장</h3>
+                      </div>
+                      <div class="impo_detail">
+                        <div class="impo_locate">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <span>인천 남동구 인주대로 651(21565)
+                          </span>
+                        </div>
+                        <div class="impo_num">
+                          <i class="fa-solid fa-phone"></i>
+                          <span>032-770-8800</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="impo_button">
+                      <a href="#none">위치보기</a>
+                      <a href="#none">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="impo_items_wrap">
+                  <div class="impo_items">
+                    <div class="impo_img">
+                      <img src="../img/map/impo_img08(인천송도).jpg" alt="" class="img13">
+                    </div>
+                    <div class="impo_item">
+                      <div class="impo_name">
+                        <img src="../img/map/location-pin.png" alt="">
+                        <h3 onclick='hello13()'>인천 송도 전시장</h3>
+                      </div>
+                      <div class="impo_detail">
+                        <div class="impo_locate">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <span>인천 연수구 하모니로178번길 6(22011)
+                          </span>
+                        </div>
+                        <div class="impo_num">
+                          <i class="fa-solid fa-phone"></i>
+                          <span>032-860-3300</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="impo_button">
+                      <a href="#none">위치보기</a>
+                      <a href="#none">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 광주 -->
+              <div class="map_impo" id="test_7">
+                <div class="impo_items_wrap">
+                  <div class="impo_items">
+                    <div class="impo_img">
+                      <img src="../img/map/impo_img09(광주).jpg" alt="" class="img14">
+                    </div>
+                    <div class="impo_item">
+                      <div class="impo_name">
+                        <img src="../img/map/location-pin.png" alt="">
+                        <h3 onclick='hello14()'>광주 전시장</h3>
+                      </div>
+                      <div class="impo_detail">
+                        <div class="impo_locate">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <span>광주광역시 서구 상무대로 1041 (61975)</span>
+                        </div>
+                        <div class="impo_num">
+                          <i class="fa-solid fa-phone"></i>
+                          <span>062-226-0001</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="impo_button">
+                      <a href="#none">위치보기</a>
+                      <a href="#none">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="impo_items_wrap">
+                  <div class="impo_items">
+                    <div class="impo_img">
+                      <img src="../img/map/impo_img09(광주).jpg" alt="" class="img15">
+                    </div>
+                    <div class="impo_item">
+                      <div class="impo_name">
+                        <img src="../img/map/location-pin.png" alt="">
+                        <h3 onclick='hello15()'>광주 수완 전시장</h3>
+                      </div>
+                      <div class="impo_detail">
+                        <div class="impo_locate">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <span>광주광역시 광산구 임방울대로 565 (62244)
+                          </span>
+                        </div>
+                        <div class="impo_num">
+                          <i class="fa-solid fa-phone"></i>
+                          <span>062-716-5001</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="impo_button">
+                      <a href="#none">위치보기</a>
+                      <a href="#none">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 울산 -->
+              <div class="map_impo" id="test_8">
+                <div class="impo_items_wrap">
+                  <div class="impo_items">
+                    <div class="impo_img">
+                      <img src="../img/map/impo_img10(울산).jpg" alt="" class="img16">
+                    </div>
+                    <div class="impo_item">
+                      <div class="impo_name">
+                        <img src="../img/map/location-pin.png" alt="">
+                        <h3 onclick='hello16()'>울산 전시장</h3>
+                      </div>
+                      <div class="impo_detail">
+                        <div class="impo_locate">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <span>울산광역시 남구 삼산로 83(44691)
+                          </span>
+                        </div>
+                        <div class="impo_num">
+                          <i class="fa-solid fa-phone"></i>
+                          <span>052-701-0503</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="impo_button">
+                      <a href="#none">위치보기</a>
+                      <a href="#none">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 경기 -->
+              <div class="map_impo" id="test_9">
+                <div class="impo_items_wrap">
+                  <div class="impo_items">
+                    <div class="impo_img">
+                      <img src="../img/map/impo_img12(분당).png" alt="" class="img17">
+                    </div>
+                    <div class="impo_item">
+                      <div class="impo_name">
+                        <img src="../img/map/location-pin.png" alt="">
+                        <h3 onclick='hello17()'>분당 서현 전시장</h3>
+                      </div>
+                      <div class="impo_detail">
+                        <div class="impo_locate">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <span>경기 성남시 분당구 서현로321번길 1(13577)</span>
+                        </div>
+                        <div class="impo_num">
+                          <i class="fa-solid fa-phone"></i>
+                          <span>031-710-8000</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="impo_button">
+                      <a href="#none">위치보기</a>
+                      <a href="#none">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="impo_items_wrap">
+                  <div class="impo_items">
+                    <div class="impo_img">
+                      <img src="../img/map/impo_img13(수원).png" alt="" class="img18">
+                    </div>
+                    <div class="impo_item">
+                      <div class="impo_name">
+                        <img src="../img/map/location-pin.png" alt="">
+                        <h3 onclick='hello18()'>수원 전시장</h3>
+                      </div>
+                      <div class="impo_detail">
+                        <div class="impo_locate">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <span>경기 용인시 기흥구 중부대로 23-2(16955)
+                          </span>
+                        </div>
+                        <div class="impo_num">
+                          <i class="fa-solid fa-phone"></i>
+                          <span>031-740-5000</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="impo_button">
+                      <a href="#none">위치보기</a>
+                      <a href="#none">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="impo_items_wrap">
+                  <div class="impo_items">
+                    <div class="impo_img">
+                      <img src="../img/map/impo_img14(성남).jpg" alt="" class="img19">
+                    </div>
+                    <div class="impo_item">
+                      <div class="impo_name">
+                        <img src="../img/map/location-pin.png" alt="">
+                        <h3 onclick='hello19()'>성남 전시장</h3>
+                      </div>
+                      <div class="impo_detail">
+                        <div class="impo_locate">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <span>경기 성남시 수정구 성남대로 1307(13109)
+                          </span>
+                        </div>
+                        <div class="impo_num">
+                          <i class="fa-solid fa-phone"></i>
+                          <span>031-600-0300</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="impo_button">
+                      <a href="#none">위치보기</a>
+                      <a href="#none">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 강원 -->
+              <div class="map_impo" id="test_10">
+                <div class="impo_items_wrap">
+                  <div class="impo_items">
+                    <div class="impo_img">
+                      <img src="../img/map/impo_img11(춘천).png" alt="" class="img20">
+                    </div>
+                    <div class="impo_item">
+                      <div class="impo_name">
+                        <img src="../img/map/location-pin.png" alt="">
+                        <h3 onclick='hello20()'>춘천 전시장</h3>
+                      </div>
+                      <div class="impo_detail">
+                        <div class="impo_locate">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <span>
+                            강원 춘천시 온의동 228-17(24431)</span>
+                        </div>
+                        <div class="impo_num">
+                          <i class="fa-solid fa-phone"></i>
+                          <span>033-903-5000</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="impo_button">
+                      <a href="#none">위치보기</a>
+                      <a href="#none">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="impo_items_wrap">
+                  <div class="impo_items">
+                    <div class="impo_img">
+                      <img src="../img/map/impo_img11(강릉).jpg" alt="" class="img21">
+                    </div>
+                    <div class="impo_item">
+                      <div class="impo_name">
+                        <img src="../img/map/location-pin.png" alt="">
+                        <h3 onclick='hello21()'>강릉전시장</h3>
+                      </div>
+                      <div class="impo_detail">
+                        <div class="impo_locate">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <span>
+                            강원 강릉시 율곡로 3091 (25493)
+                          </span>
+                        </div>
+                        <div class="impo_num">
+                          <i class="fa-solid fa-phone"></i>
+                          <span>033-923-7000</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="impo_button">
+                      <a href="#none">위치보기</a>
+                      <a href="#none">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer_inner">
+      <div class="footer_logo">
+        <img src="../img/footer/footer_logo.png" alt="푸터로고">
+      </div>
+      <div class="footer_text_wrap">
+        <ul class="footer_text_top">
+          <li><a href="#none">개인정보처리방침</a></li>
+          <li><a href="#none">법적고지</a></li>
+          <li><a href="#none">이용약관</a></li>
+          <li><a href="#none">딜러사 정보</a></li>
+        </ul>
+        <div class="footer_text_bottom">
+          <p>메르세데스-벤츠 코리아㈜&nbsp;서울특별시 중구 한강대로 416 서울 스퀘어 9층 (우) 04637</p>
+          <p>대표자 성명 : VAITL MATHIAS ALEXANDER</p>
+          <p>사업자 등록번호: 220-86-46545</p>
+          <p id="m-none">호스팅서비스 제공자: Amazon Web Services, Inc.</p>
+          <p id="m-none">고객 컨택 센터: 경기도 부천시 원미구 부일로 223 투나 8층 (우) 14623</p>
+          <p>전화: 080-001-1886</p>
+          <p>이메일 : mbk_cs@daimler.com</p>
+          <span id="m-none"> 메르세데스-벤츠 코리아㈜는 통신판매중개자이고 통신판매의 당사자가 아니며, 상품, 상품정보, 거래에 관한 의무와 책임은 판매자에게 있습니다. <br>
+          </span>
+          <span id="copy">&copy; 2024. 메르세데스-벤츠 코리아(주) 판권소유 (제공 업체)</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- quickMenu -->
+  <div class="quickMenu">
+    <a href="#none" class="open_madal" alt="서비스모달창">
+      <i class="fa-brands fa-rocketchat"></i>
+    </a>
+    <a href="#none" class="gototop_Btn" onclick="goToTop()" alt="맨위로이동">
+      <i class="fa-solid fa-chevron-up"></i>
+      <h5>TOP</h5>
+    </a>
+  </div>
+  <div class="modal">
+    <div class="modal_top">
+      <div class="modal_close">
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <div class="modal_text">
+        <h3>메르세데스-벤츠 스토어에 <br>
+          오신 것을 환영합니다!</h3>
+        <p>무엇을 도와드릴까요?</p>
+        <small>개인정보의 수집 및 이용 동의</small>
+      </div>
+    </div>
+    <div class="modal_button_wrap">
+      <button id="past">문의이력</button>
+      <button id="immediately">실시간 문의하기</button>
+    </div>
+  </div>
+  <script src=" ../js/map.js"></script>
+</body>
+
+</html>

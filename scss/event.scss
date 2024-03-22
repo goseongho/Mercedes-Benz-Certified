@@ -1,0 +1,60 @@
+@import "reset", "variable", "font";
+
+.event {
+  max-width: 1920px;
+  width: 100%;
+  background-color: #000;
+  .event_in {
+    position: relative;
+    overflow: hidden;
+    width: 1200px;
+    margin: auto;
+    height: 276px;
+    display: flex;
+    justify-content: space-between;
+    .event_text {
+      padding-top: 50px;
+      line-height: 50px;
+      h3 {
+        font-size: $h4;
+        font-weight: $bold;
+        color: $white;
+      }
+      p {
+        font-size: $strong;
+        color: $pale-gray;
+      }
+      a {
+        color: $pale-gray;
+        margin-top: 20px;
+        font-size: $strong;
+        width: 120px;
+        height: 40px;
+        line-height: 38px;
+        text-align: center;
+        box-sizing: border-box;
+        display: block;
+        border-radius: 50px;
+        border: 2px solid $pale-gray;
+        transition: 0.35s;
+        &:hover {
+          background-color: $light-black;
+          border: 2px solid $light-black;
+          font-weight: $medium;
+        }
+      }
+    }
+    .event_img {
+      width: 600px;
+      height: 800px;
+      background: url(../img/section_event/event_bg.png) no-repeat;
+      background-color: rgba(0, 0, 0, 0.295);
+      background-blend-mode: multiply;
+      background-position: -200px -280px;
+      position: absolute;
+      right: 0;
+      box-shadow: inset 0px -19px 20px 15px black, inset 0 0 50px black;
+      background-size: cover;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "reset", "variable", "font";
+:root {
+  font-size: 18px;
+}
+* {
+  font-family: $primary-font;
+  font-size: 18px;
+  max-width: 1920px;
+  box-sizing: border-box;
+}
+
+[class*="inner"] {
+  width: 1200px;
+  margin: auto;
+  //border: 1px solid red;
+}
+
+body {
+  max-width: 1920px;
+  font-size: 18px;
+}
+a {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+@import "header", "section_keyWord", "section_bestModel", "section_trend",
+  "section_certified", "section_process", "event", "section_question", "footer",
+  "quickMenu", "map", "salesMain", "responsive";

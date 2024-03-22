@@ -1,0 +1,330 @@
+@charset "UTF-8";
+/* ===========reset=========== */
+@import url("https://webfontworld.github.io/GothicA1/GothicA1.css");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap");
+@import url("https://webfontworld.github.io/Cafe24SsurroundAir/Cafe24SsurroundAir.css");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+body {
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+ol, ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+/*google WEB FONT Gothic A1*/
+/*google WEB FONT Inria Serif*/
+/* 폰트어썸 아이콘cdn */
+/*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />*/
+/*Font Family*/
+/*Font Size*/
+/*Font Weight*/
+/* Setting Variables : Object Color */
+/* Setting Variables : Text Color */
+.header {
+  max-width: 1920px;
+  width: 100%;
+  height: 65px;
+  line-height: 65px;
+  padding: 0 9rem;
+  box-sizing: border-box;
+  background-color: #000;
+  position: fixed;
+  z-index: 3;
+}
+.header.active {
+  background-color: rgba(0, 0, 0, 0.1882352941);
+}
+.header .header_in {
+  height: inherit;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.header .header_in .header_logo a {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.header .header_in .header_logo a img {
+  width: 30px;
+  height: 30px;
+}
+.header .header_in .header_logo a p {
+  font-size: 20px;
+  font-family: "Inria Serif";
+}
+.header .header_in .nav .nav_wrap {
+  display: flex;
+  text-align: center;
+}
+.header .header_in .nav .nav_wrap li {
+  width: 110px;
+}
+.header .header_in .nav .nav_wrap li:hover a::after {
+  opacity: 1;
+}
+.header .header_in .nav .nav_wrap li .last2 {
+  margin-left: 15px;
+}
+.header .header_in .nav .nav_wrap li .last2::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  bottom: 0.5px;
+  left: -6px;
+  opacity: 0;
+}
+.header .header_in .nav .nav_wrap li .last {
+  margin-right: 15px;
+}
+.header .header_in .nav .nav_wrap li .last::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  bottom: 0.5px;
+  left: 0px;
+  opacity: 0;
+}
+.header .header_in .nav .nav_wrap li #pageMove {
+  font-weight: 700;
+}
+.header .header_in .nav .nav_wrap li a {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  position: relative;
+  display: block;
+  margin-right: 10px;
+}
+.header .header_in .nav .nav_wrap li a::after {
+  content: "";
+  height: 2px;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  bottom: 0.5px;
+  left: 3px;
+  opacity: 0;
+  animation: navLine linear 1s infinite;
+}
+@keyframes navLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100px;
+  }
+}
+.header .header_in .header_icon {
+  align-self: center;
+}
+.header .header_in .header_icon .icon_wrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header .header_in .header_icon .icon_wrap a i {
+  color: #fff;
+}
+
+.site_map {
+  display: none;
+}
+
+.main {
+  max-width: 1920px;
+  height: 100vh;
+  background-image: url(../img/main/bg_visual.jpg);
+  background-color: rgba(0, 0, 0, 0.062745098);
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-size: cover;
+}
+.main .main_in {
+  margin: auto;
+  height: inherit;
+}
+.main .main_in .main_title {
+  padding-left: 17.5rem;
+  padding-top: 8rem;
+  line-height: 50px;
+  color: #fff;
+  text-shadow: 0 0 0.3rem #191919;
+}
+.main .main_in .main_title h3 {
+  width: auto;
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: -0.1rem;
+}
+.main .main_in .main_title p {
+  font-size: 0.9rem;
+  margin-left: 5px;
+}
+.main .main_in .main_swiper {
+  width: 100%;
+  margin: auto;
+  color: #fff;
+}
+.main .main_in .main_swiper .mainSwiper .swiper-wrapper {
+  text-align: center;
+}
+.main .main_in .main_swiper .mainSwiper .swiper-wrapper .swiper-slide {
+  height: auto;
+  margin-top: 60px;
+}
+.main .main_in .main_swiper .mainSwiper .swiper-wrapper .swiper-slide-active {
+  margin-left: 10px !important;
+  margin-right: 40px !important;
+}
+.main .main_in .main_swiper .mainSwiper .swiper-wrapper .swiper-slide-active .car_name {
+  display: none;
+}
+.main .main_in .main_swiper .mainSwiper .swiper-wrapper .swiper-slide-active .car_content {
+  display: block !important;
+}
+.main .main_in .main_swiper .mainSwiper .swiper-wrapper .swiper-slide-active .img_wrap {
+  height: 400px;
+  text-align: center;
+  position: relative;
+}
+.main .main_in .main_swiper .mainSwiper .swiper-wrapper .swiper-slide-active .img_wrap img {
+  width: 430px !important;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main .main_in .main_swiper .mainSwiper .swiper-wrapper .swiper-slide .car_name {
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  font-family: "Inria Serif";
+}
+.main .main_in .main_swiper .mainSwiper .swiper-wrapper .swiper-slide .img_wrap {
+  text-align: center;
+}
+.main .main_in .main_swiper .mainSwiper .swiper-wrapper .swiper-slide .img_wrap img {
+  width: 70%;
+  margin-top: 70px;
+}
+.main .main_in .main_swiper .mainSwiper .swiper-wrapper .swiper-slide .car_content {
+  display: none;
+}
+.main .main_in .main_swiper .mainSwiper .swiper-wrapper .swiper-slide .car_content h2 {
+  font-family: "Inria Serif";
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.main .main_in .main_swiper .mainSwiper .swiper-wrapper .swiper-slide .car_content a {
+  color: #fff;
+}
+.main .main_in .main_swiper .mainSwiper .swiper-wrapper .swiper-slide .car_content a p {
+  margin-top: 30px;
+  font-size: 0.78rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+.main .main_in .main_swiper .mainSwiper .swiper-wrapper .swiper-slide .car_content .button {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  position: relative;
+  margin-top: 25px;
+  font-size: 0.78rem;
+  padding: 1rem 2rem;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+.main .main_in .main_swiper .mainSwiper .swiper-wrapper .swiper-slide .car_content .button:hover span {
+  color: #000;
+}
+.main .main_in .main_swiper .mainSwiper .swiper-wrapper .swiper-slide .car_content .button span {
+  position: relative;
+  z-index: 1;
+}
+.main .main_in .main_swiper .mainSwiper .swiper-wrapper .swiper-slide .car_content .button:hover:before {
+  clip-path: circle(500px at left center);
+}
+.main .main_in .main_swiper .mainSwiper .swiper-wrapper .swiper-slide .car_content .button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  clip-path: circle(0 at left center);
+  transition: 0.5s ease-out;
+}
+.main .main_in .main_swiper .mainSwiper .swiper-button-next {
+  color: #8fa7bd;
+  background-color: rgba(0, 0, 0, 0.5215686275);
+  padding: 15px 5px;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px #8c8c8c;
+  position: absolute;
+  left: 63%;
+  top: 34%;
+}
+.main .main_in .main_swiper .mainSwiper .swiper-button-next::after {
+  font-size: 1.1rem !important;
+  font-weight: 700 !important;
+}
+.main .main_in .main_swiper .mainSwiper .swiper-button-prev {
+  color: #8fa7bd;
+  background-color: rgba(0, 0, 0, 0.5215686275);
+  padding: 15px 5px;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px #8c8c8c;
+  position: absolute;
+  left: 36%;
+  top: 34%;
+}
+.main .main_in .main_swiper .mainSwiper .swiper-button-prev::after {
+  font-size: 1.1rem !important;
+  font-weight: 700 !important;
+}

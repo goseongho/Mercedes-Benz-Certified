@@ -1,0 +1,423 @@
+@charset "UTF-8";
+/* ===========reset=========== */
+@import url("https://webfontworld.github.io/GothicA1/GothicA1.css");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+body {
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+ol, ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+/*Font Family*/
+/*Font Size*/
+/*Font Weight*/
+/* Setting Variables : Object Color */
+/* Setting Variables : Text Color */
+/*google WEB FONT Gothic A1*/
+/*google WEB FONT Inria Serif*/
+/* 폰트어썸 아이콘cdn */
+/*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />*/
+* {
+  font-family: "Gothic A1";
+  font-size: 18px;
+}
+
+.intro_wrap {
+  position: relative;
+}
+.intro_wrap .intro_first {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  right: 0;
+  opacity: 1;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro_wrap .intro_second {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  right: 0;
+  background-color: #000;
+  opacity: 1;
+  /* 제자리로 돌아오는 값 롸이트:0 */
+  right: 0;
+  animation: sildetwo 4s ease-in-out;
+  /*backwards 멈춰있는거*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes sildetwo {
+  0% {
+    right: -720px;
+    opacity: 0;
+  }
+  30% {
+    right: -720px;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+.intro_wrap .intro_second .second_box {
+  opacity: 0;
+  position: relative;
+  animation: secondbox 6s;
+}
+@keyframes secondbox {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.intro_wrap .intro_second .second_box .intro_second_logo {
+  animation: secondlogo 3s ease;
+}
+@keyframes secondlogo {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.intro_wrap .intro_second .second_box .logo_line {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: -500%;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #fff;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  animation: tireLine 1s;
+  animation-delay: 3s;
+}
+@keyframes tireLine {
+  0% {
+    opacity: 0;
+    transform: translateX(-500%);
+  }
+  90% {
+    opacity: 0.7;
+    transform: translateX(800%);
+  }
+  95% {
+    opacity: 0.5;
+    transform: translateX(800%);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.intro_wrap .intro_second .second_logo {
+  position: absolute;
+}
+.intro_wrap .intro_second .second_logo img {
+  opacity: 0;
+  animation: logorotate 5s;
+  animation-delay: 2.5s;
+}
+@keyframes logorotate {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0.8;
+  }
+  70% {
+    opacity: 1;
+    transform: rotate(300deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.intro_third {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  /*시간 늦추기*/
+  animation: thirdDisplay 10s ease backwards;
+  transition: 2s;
+}
+.intro_third .sell_wrap, .intro_third .buy {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: inherit;
+}
+.intro_third .sell_wrap {
+  position: relative;
+}
+.intro_third .sell_wrap .sell {
+  display: block;
+  opacity: 1;
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  background: #fff;
+  /*   transition: 0.35s;
+  &:hover{
+      background: url(../img/intro/sell.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      .sell_Btn{
+        transition: 0.3s;
+        opacity: 1 !important;
+        border: 1px solid $white!important;
+        color: $white!important;
+      }
+      h4{
+        color: $white !important;
+      }
+    }
+    */
+}
+.intro_third .sell_wrap .sell .sell_text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.intro_third .sell_wrap .sell .sell_text span {
+  font-size: 20px;
+  color: #16a2b5;
+  font-weight: 700;
+}
+.intro_third .sell_wrap .sell .sell_text h4 {
+  padding-top: 30px;
+  font-size: 40px;
+  color: #404040;
+  font-weight: 700;
+  line-height: 46px;
+}
+.intro_third .sell_wrap .sell_hover {
+  display: none;
+  width: 100%;
+  height: inherit;
+  background-image: url(../img/intro/sell.png);
+  background-size: cover;
+  position: absolute;
+}
+.intro_third .sell_wrap .sell_hover .sell_text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.intro_third .sell_wrap .sell_hover .sell_text span {
+  font-size: 20px;
+  color: #16a2b5;
+  font-weight: 700;
+}
+.intro_third .sell_wrap .sell_hover .sell_text h4 {
+  padding-top: 30px;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 46px;
+}
+.intro_third .sell_wrap .sell_hover .sell_Btn {
+  opacity: 1;
+  position: relative;
+  display: inline-block;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  padding: 0.65rem 4rem;
+  overflow: hidden;
+  margin-top: 80px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  /*마우스오버시 버튼 보이면서 올라감*/
+}
+.intro_third .sell_wrap .sell_hover .sell_Btn:hover {
+  opacity: 1;
+}
+.intro_third .sell_wrap .sell_hover .sell_Btn:hover:before {
+  clip-path: circle(500px at left center);
+}
+.intro_third .sell_wrap .sell_hover .sell_Btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  clip-path: circle(0 at left center);
+  transition: 1.2s ease-out;
+}
+.intro_third .sell_wrap .sell_hover .sell_Btn span {
+  position: relative;
+  z-index: 1;
+}
+.intro_third .buy {
+  width: 100%;
+  flex-direction: column;
+  background-color: #fff;
+  transition: 0.35s !important;
+  /*마우스 호버시 생김*/
+}
+.intro_third .buy:hover {
+  background-image: url(../img/intro/buy-bg.png);
+  background-size: cover;
+  animation: buybg linear 1s;
+}
+@keyframes buybg {
+  0% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 25%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 75%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.intro_third .buy:hover .buy_ligthbox {
+  margin-top: 350px;
+  display: block;
+}
+.intro_third .buy:hover .buy_text {
+  margin-top: -250px;
+}
+.intro_third .buy .buy_text {
+  position: absolute;
+}
+.intro_third .buy .buy_text span {
+  font-size: 20px;
+  color: #16a2b5;
+  font-weight: 700;
+}
+.intro_third .buy .buy_text h4 {
+  padding-top: 30px;
+  font-size: 40px;
+  color: #404040;
+  font-weight: 700;
+  line-height: 46px;
+}
+.intro_third .buy .buy_ligthbox {
+  display: none;
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+.intro_third .buy .buy_ligthbox .benz_go {
+  display: block;
+  padding-bottom: 70px;
+  color: #525252;
+}
+.intro_third .buy .buy_ligthbox .benz_go i {
+  color: #404040;
+}
+.intro_third .buy .buy_all_car {
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.intro_third .buy .buy_all_car a {
+  position: relative;
+  margin-left: -20px;
+  width: 600px;
+  height: 200px;
+  background-image: url(../img/intro/intro_car-all.png);
+  background-size: cover;
+  transition: 0.35s ease-in-out;
+}
+.intro_third .buy .buy_all_car a:hover {
+  background-image: url(../img/intro/ligth_on.png);
+  background-size: cover;
+}
+.intro_third .buy h6 {
+  margin-top: 230px;
+  color: #525252;
+}

@@ -1,0 +1,322 @@
+@charset "UTF-8";
+/* ===========reset=========== */
+@import url("https://webfontworld.github.io/GothicA1/GothicA1.css");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap");
+@import url("https://webfontworld.github.io/Cafe24SsurroundAir/Cafe24SsurroundAir.css");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+body {
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+ol, ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+/*Font Family*/
+/*Font Size*/
+/*Font Weight*/
+/* Setting Variables : Object Color */
+/* Setting Variables : Text Color */
+/*google WEB FONT Gothic A1*/
+/*google WEB FONT Inria Serif*/
+/* 폰트어썸 아이콘cdn */
+/*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />*/
+.section_best {
+  max-width: 1920px;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+}
+.section_best::after {
+  content: "";
+  width: 610px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  top: 150px;
+  left: 0;
+}
+.section_best .best_inner {
+  padding: 4.4rem 0;
+  position: relative;
+}
+.section_best .best_inner .best_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section_best .best_inner .best_top .best_title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+.section_best .best_inner .best_top a {
+  display: none;
+}
+.section_best .best_inner .best_top a p {
+  font-weight: 700;
+}
+.section_best .best_inner .best_top a i {
+  transition: 0.3s;
+}
+.section_best .best_inner .best_top a:hover i {
+  transform: translateX(5px);
+}
+.section_best .best_inner .best_desktop .best_swiper {
+  width: 100%;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_top {
+  padding-top: 4rem;
+  width: inherit;
+  cursor: pointer;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_top .swiper-wrapper {
+  width: inherit;
+  box-sizing: border-box;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_top .swiper-wrapper .top_slide {
+  width: inherit !important;
+  height: 450px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_top .swiper-wrapper .top_slide .imgBox {
+  width: 700px;
+  box-sizing: border-box;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_top .swiper-wrapper .top_slide .imgBox img {
+  width: 100%;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_top .swiper-wrapper .top_slide .slide_text_wrap {
+  width: 360px;
+  position: relative;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_top .swiper-wrapper .top_slide .slide_text_wrap .title h5 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_top .swiper-wrapper .top_slide .slide_text_wrap .title strong {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_top .swiper-wrapper .top_slide .slide_text_wrap .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_top .swiper-wrapper .top_slide .slide_text_wrap .price h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_top .swiper-wrapper .top_slide .slide_text_wrap .price label {
+  cursor: pointer;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_top .swiper-wrapper .top_slide .slide_text_wrap .price label #likeBtn {
+  display: none;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_top .swiper-wrapper .top_slide .slide_text_wrap .price label #likeBtn + em {
+  width: 20px;
+  height: 19px;
+  display: inline-block;
+  background: url(../img/section_bestModel/star.png);
+  background-position: left;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_top .swiper-wrapper .top_slide .slide_text_wrap .price label #likeBtn:checked + em {
+  background-position: right;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_top .swiper-wrapper .top_slide .slide_text_wrap .info .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_top .swiper-wrapper .top_slide .slide_text_wrap .info .text h6 {
+  font-weight: 700;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_top .swiper-wrapper .top_slide .slide_text_wrap .info .text h6:nth-child(1) {
+  color: #9f9f9f;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_top .swiper-wrapper .slide01::after {
+  content: url(../img/section_bestModel/01.svg);
+  position: absolute;
+  right: 0;
+  top: -50px;
+  z-index: -1;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_top .swiper-wrapper .slide02::after {
+  content: url(../img/section_bestModel/02.svg);
+  position: absolute;
+  right: 0;
+  top: -50px;
+  z-index: -1;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_top .swiper-wrapper .slide03::after {
+  content: url(../img/section_bestModel/03.svg);
+  position: absolute;
+  right: 0;
+  top: -50px;
+  z-index: -1;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_top .swiper-wrapper .slide04::after {
+  content: url(../img/section_bestModel/04.svg);
+  position: absolute;
+  right: 0;
+  top: -50px;
+  z-index: -1;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_top .swiper-wrapper .slide05::after {
+  content: url(../img/section_bestModel/05.svg);
+  position: absolute;
+  right: 0;
+  top: -50px;
+  z-index: -1;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_top .swiper-wrapper .slide06::after {
+  content: url(../img/section_bestModel/06.svg);
+  position: absolute;
+  right: 0;
+  top: -50px;
+  z-index: -1;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_top .swiper-wrapper .slide07::after {
+  content: url(../img/section_bestModel/07.svg);
+  position: absolute;
+  right: 0;
+  top: -50px;
+  z-index: -1;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_top .swiper-wrapper .slide08::after {
+  content: url(../img/section_bestModel/08.svg);
+  position: absolute;
+  right: 0;
+  top: -50px;
+  z-index: -1;
+}
+.section_best .best_inner .best_desktop .best_swiper .swiper-button-next {
+  right: -70px;
+}
+.section_best .best_inner .best_desktop .best_swiper .swiper-button-prev {
+  left: -70px;
+}
+.section_best .best_inner .best_desktop .best_swiper .swiper-button-next,
+.section_best .best_inner .best_desktop .best_swiper .swiper-button-prev {
+  color: #fff;
+  top: 750px;
+}
+.section_best .best_inner .best_desktop .best_swiper .swiper-button-next::after,
+.section_best .best_inner .best_desktop .best_swiper .swiper-button-prev::after {
+  font-size: 1.4rem;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_bottom {
+  position: relative;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_bottom .swiper-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_bottom .swiper-wrapper .bottom_slide {
+  height: 180px;
+  background-image: linear-gradient(#000 10%, #525252 20%, #8c8c8c 70%);
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_bottom .swiper-wrapper .bottom_slide.swiper-slide-thumb-active {
+  background-image: linear-gradient(#000 10%, #8c8c8c 20%, #fff 80%);
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_bottom .swiper-wrapper .bottom_slide::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.2;
+}
+.section_best .best_inner .best_desktop .best_swiper .best_swiper_bottom .swiper-wrapper .bottom_slide img {
+  padding-top: 2rem;
+  width: 90%;
+  box-sizing: border-box;
+}
+.section_best .best_inner .best_mobile {
+  display: none;
+}
+.section_best .best_inner::after {
+  content: url(../img/section_bestModel/touchCursor.svg);
+  width: 30px;
+  height: 35px;
+  position: absolute;
+  left: 35%;
+  bottom: 85px;
+  z-index: 2;
+  animation: clickCursor 5s 1s infinite;
+}
+@keyframes clickCursor {
+  0% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0.5;
+  }
+  30% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,117 @@
+@import "reset", "variable", "font";
+
+.section_question {
+  max-width: 1920px;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/section_question/Q&A\ BG2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $gray;
+  background-position-y: -280px;
+  background-blend-mode: multiply;
+  .question_inner {
+    position: relative;
+    margin: auto;
+    width: 1200px;
+    height: inherit;
+    .question_top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 100px;
+      text-align: center;
+      line-height: 40px;
+      p {
+        color: $white;
+        font-size: $p;
+        font-family: $logo-font;
+      }
+      h3 {
+        color: $white;
+        font-size: $h3;
+        font-weight: $bold;
+      }
+      a {
+        margin-top: 50px;
+        font-weight: $bold;
+        color: $light-black;
+        display: block;
+        width: 144px;
+        height: 38px;
+        line-height: 38px;
+        font-size: $strong;
+        background-color: #ffffff80;
+        transition: 0.3s;
+        &:hover {
+          color: $dark-green;
+          background-color: $dark-clouds;
+        }
+      }
+    }
+    .question_bottom {
+      margin: auto;
+      width: 1200px;
+      .mySwiper_question {
+        width: 100%;
+        margin-top: 140px;
+        .swiper-wrapper {
+          margin-top: 90px;
+          .swiper-slide {
+            height: 250px;
+            background-color: #e1e1e160;
+            padding: 1.8rem;
+            /* 박스 hover시 효과 */
+            transition: 0.35s ease-in-out;
+            &:hover {
+              transform: translateY(-25px);
+              background-color: #cad6d890;
+            }
+            a {
+              height: 100%;
+              box-sizing: border-box;
+              color: $white;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              font-weight: $bold;
+              h5 {
+                text-shadow: 1px 1px 5px $dark-black;
+                font-size: $h6;
+              }
+              h6 {
+                text-shadow: 1px 1px 5px $dark-black;
+                font-size: $p;
+                line-height: 1.5;
+              }
+            }
+          }
+        }
+      }
+    }
+    .swiper-button-next {
+      width: 30px;
+      height: 30px;
+      border-radius: 30px;
+      color: $white;
+      margin-top: 150px;
+      right: -50px;
+      background-color: #ffffff50;
+      &::after {
+        font-size: $small;
+      }
+    }
+    .swiper-button-prev {
+      width: 30px;
+      height: 30px;
+      border-radius: 30px;
+      color: $white;
+      margin-top: 150px;
+      left: -50px;
+      background-color: #ffffff50;
+      &::after {
+        font-size: $small;
+      }
+    }
+  }
+}

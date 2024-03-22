@@ -1,0 +1,582 @@
+@charset "UTF-8";
+/* ===========reset=========== */
+@import url("https://webfontworld.github.io/GothicA1/GothicA1.css");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap");
+@import url("https://webfontworld.github.io/Cafe24SsurroundAir/Cafe24SsurroundAir.css");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+body {
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+ol, ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+/*Font Family*/
+/*Font Size*/
+/*Font Weight*/
+/* Setting Variables : Object Color */
+/* Setting Variables : Text Color */
+/*google WEB FONT Gothic A1*/
+/*google WEB FONT Inria Serif*/
+/* 폰트어썸 아이콘cdn */
+/*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />*/
+.section_trend {
+  max-width: 1920px;
+  width: 100%;
+}
+.section_trend .section {
+  opacity: 0;
+  transition: opacity 1s ease, transform 1.5s ease;
+}
+.section_trend .section.active {
+  opacity: 1;
+  transform: translateY(-50vh);
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.section_trend .trend01 {
+  height: 100vh;
+  background-color: #01252a;
+  color: #fff;
+  padding: 130px 0;
+  box-sizing: border-box;
+  position: relative;
+  /*
+      ::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: -50px;
+        left: 0;
+        position: absolute;
+        transform: translateY(0px);
+        z-index: -1;
+        background-color: $dark-green;
+      }
+  */
+  /*
+  &.active {
+    opacity: 1;
+    animation: trend01ani linear 1.5s;
+
+    @keyframes trend01ani {
+      0% {
+        opacity: 1;
+      }
+      25% {
+        opacity: 0.75;
+      }
+      50% {
+        opacity: 0.5;
+      }
+      75% {
+        opacity: 0.25;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+  */
+}
+.section_trend .trend01 .trend01_inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section_trend .trend01 .trend01_inner .trend01_title h2 {
+  font-size: 4.45rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.section_trend .trend01 .trend01_inner .trend01_wrap {
+  display: flex;
+}
+.section_trend .trend01 .trend01_inner .trend01_wrap .trend01_item {
+  padding: 0 40px;
+  border-left: 2px solid #fff;
+}
+.section_trend .trend01 .trend01_inner .trend01_wrap .trend01_item h3 {
+  margin-top: 20px;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.section_trend .trend01 .trend01_inner .trend01_wrap .trend01_item h3 span {
+  margin-left: 3px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.section_trend .trend02 {
+  height: 100vh;
+  background-color: #fff;
+  padding: 130px 0;
+  box-sizing: border-box;
+}
+.section_trend .trend02 .trend02_inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section_trend .trend02 .trend02_inner .trend02_top {
+  display: flex;
+  justify-content: space-between;
+}
+.section_trend .trend02 .trend02_inner .trend02_top .trend02_textBox {
+  width: 380px;
+}
+.section_trend .trend02 .trend02_inner .trend02_top .trend02_textBox h5 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #5f5f5f;
+  letter-spacing: -1.8px;
+}
+.section_trend .trend02 .trend02_inner .trend02_top .trend02_textBox h6 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #8c8c8c;
+  line-height: 1.3;
+  margin-top: 1.5rem;
+  letter-spacing: -0.5px;
+}
+.section_trend .trend02 .trend02_inner .trend02_top .trend02_textBox h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 4rem;
+}
+.section_trend .trend02 .trend02_inner .trend02_top .trend02_textBox h3 span {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.section_trend .trend02 .trend02_inner .trend02_top .trend02_percentBox {
+  width: 670px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.section_trend .trend02 .trend02_inner .trend02_top .trend02_percentBox .graph_wrap {
+  padding-top: 85px;
+  position: relative;
+}
+.section_trend .trend02 .trend02_inner .trend02_top .trend02_percentBox .graph_wrap .round_graph {
+  width: 165px;
+  height: 165px;
+  border-radius: 165px;
+  background-color: #e1e1e1;
+  position: relative;
+  cursor: pointer;
+}
+.section_trend .trend02 .trend02_inner .trend02_top .trend02_percentBox .graph_wrap .round_graph .white_round {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.section_trend .trend02 .trend02_inner .trend02_top .trend02_percentBox .graph_wrap .round_graph .white_round .color_round {
+  width: 105px;
+  height: 105px;
+  border-radius: 105px;
+  line-height: 105px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.section_trend .trend02 .trend02_inner .trend02_top .trend02_percentBox .graph_wrap .round_graph:hover + .price_amount {
+  opacity: 1;
+  animation: priceamount linear 0.8s;
+}
+@keyframes priceamount {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 25%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 75%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.section_trend .trend02 .trend02_inner .trend02_top .trend02_percentBox .graph_wrap .round01 .white_round .color_round {
+  background-color: #57493e;
+}
+.section_trend .trend02 .trend02_inner .trend02_top .trend02_percentBox .graph_wrap .round02 .white_round .color_round {
+  background-color: #06233a;
+}
+.section_trend .trend02 .trend02_inner .trend02_top .trend02_percentBox .graph_wrap .round03 .white_round .color_round {
+  background-color: #a1a5a1;
+}
+.section_trend .trend02 .trend02_inner .trend02_top .trend02_percentBox .graph_wrap .price_amount {
+  opacity: 0;
+  display: block;
+  width: 180px;
+  height: 134px;
+  position: absolute;
+  top: 20px;
+  left: 80px;
+  padding-right: 8rem;
+  background-image: url(../img/section_trend02/amount_line.svg);
+  background-repeat: no-repeat;
+}
+.section_trend .trend02 .trend02_inner .trend02_top .trend02_percentBox .graph_wrap .price_amount .amount {
+  width: 80%;
+  position: absolute;
+  top: -10px;
+  left: 185px;
+  font-size: 0.9rem;
+}
+.section_trend .trend02 .trend02_inner .trend02_top .trend02_percentBox .graph_info_bubble {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  width: 295px;
+  height: 57.5px;
+  padding: 0.5rem 0;
+  text-align: center;
+  background-image: url(../img/section_trend02/speech_bubble.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  opacity: 0;
+}
+.section_trend .trend02 .trend02_inner .trend02_top .trend02_percentBox .graph_info_bubble small {
+  font-size: 0.78rem;
+  color: #404040;
+  letter-spacing: -0.5px;
+}
+.section_trend .trend02 .trend02_inner .trend02_top .trend02_percentBox .graph_info_bubble.bubble_ani {
+  animation: bubble infinite 3s;
+  animation-delay: 0.7s;
+}
+@keyframes bubble {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.3;
+  }
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  85% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.section_trend .trend02 .trend02_inner .trend02_bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.section_trend .trend02 .trend02_inner .trend02_bottom .trend_card {
+  width: 360px;
+  height: 180px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section_trend .trend02 .trend02_inner .trend02_bottom .trend_card:hover {
+  animation: card linear 0.5s;
+  cursor: pointer;
+}
+@keyframes card {
+  from {
+    transform: rotateY(-0.2turn);
+  }
+  to {
+    transform: rotateY(0);
+  }
+}
+.section_trend .trend02 .trend02_inner .trend02_bottom .trend_card.card01 {
+  background: linear-gradient(90deg, #01252a 72%, rgba(1, 37, 42, 0.5647058824) 100%), url(../img/section_trend02/trend02-1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+.section_trend .trend02 .trend02_inner .trend02_bottom .trend_card.card02 {
+  background: linear-gradient(90deg, #01252a 72%, rgba(1, 37, 42, 0.5647058824) 100%), url(../img/section_trend02/trend02-3.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+.section_trend .trend02 .trend02_inner .trend02_bottom .trend_card.card03 {
+  background: linear-gradient(90deg, #01252a 72%, rgba(1, 37, 42, 0.5647058824) 100%), url(../img/section_trend02/trend02-2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+.section_trend .trend02 .trend02_inner .trend02_bottom .trend_card .card_left .card_title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.section_trend .trend02 .trend02_inner .trend02_bottom .trend_card .card_left .card_title h6 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #8c8c8c;
+}
+.section_trend .trend02 .trend02_inner .trend02_bottom .trend_card .card_left h4 {
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 20px 0 10px 0;
+}
+.section_trend .trend02 .trend02_inner .trend02_bottom .trend_card .card_left h4 span {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.section_trend .trend02 .trend02_inner .trend02_bottom .trend_card .card_left small {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #045762;
+}
+.section_trend .trend02 .trend02_inner .trend02_bottom .trend_card .card_right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+.section_trend .trend02 .trend02_inner .trend02_bottom .trend_card .card_right small {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #8fa7bd;
+}
+.section_trend .trend02 .trend02_inner .trend02_bottom .trend_card .card_right h6 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #16a2b5;
+}
+.section_trend .trend03 {
+  height: 100vh;
+  background-color: #e1e1e1;
+  padding: 130px 0;
+  box-sizing: border-box;
+}
+.section_trend .trend03 .trend03_inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section_trend .trend03 .trend03_inner h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.section_trend .trend03 .trend03_inner h3 br {
+  display: none;
+}
+.section_trend .trend03 .trend03_inner .trend03_boxWrap {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.section_trend .trend03 .trend03_inner .trend03_boxWrap [class*=box] {
+  width: 570px;
+  height: 540px;
+  background-color: #f5f5f6;
+  border-radius: 20px;
+  padding: 3rem;
+  box-sizing: border-box;
+}
+.section_trend .trend03 .trend03_inner .trend03_boxWrap .box01 {
+  overflow: hidden;
+  background-image: url(../img/section_trend03/trend03-car1.png);
+  background-repeat: no-repeat;
+  background-size: 470px;
+  background-position-x: 140px;
+  background-position-y: 170px;
+}
+.section_trend .trend03 .trend03_inner .trend03_boxWrap .box01 h5 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.section_trend .trend03 .trend03_inner .trend03_boxWrap .box01 .text_wrap {
+  margin-top: 2rem;
+}
+.section_trend .trend03 .trend03_inner .trend03_boxWrap .box01 .text_wrap .text {
+  padding-bottom: 2rem;
+}
+.section_trend .trend03 .trend03_inner .trend03_boxWrap .box01 .text_wrap .text i {
+  color: #16a2b5;
+  margin-right: 5px;
+}
+.section_trend .trend03 .trend03_inner .trend03_boxWrap .box01 .text_wrap .text strong {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #404040;
+}
+.section_trend .trend03 .trend03_inner .trend03_boxWrap .box02 h5 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+}
+.section_trend .trend03 .trend03_inner .trend03_boxWrap .box02 .dashboard {
+  margin-top: 45px;
+  text-align: center;
+  position: relative;
+}
+.section_trend .trend03 .trend03_inner .trend03_boxWrap .box02 .dashboard::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #e5e6e7;
+  position: absolute;
+  top: 120px;
+  left: 208px;
+}
+.section_trend .trend03 .trend03_inner .trend03_boxWrap .box02 .dashboard .dashboard_BG {
+  width: 290px;
+}
+.section_trend .trend03 .trend03_inner .trend03_boxWrap .box02 .dashboard .dashboard_pointer {
+  width: 120px;
+  position: absolute;
+  bottom: 80px;
+  left: 210px;
+  z-index: 10;
+}
+.section_trend .trend03 .trend03_inner .trend03_boxWrap .box02 .dashboard .dashboard_pointer.pointer {
+  animation: dashboard linear 2.5s;
+}
+@keyframes dashboard {
+  0% {
+    rotate: -180deg;
+    transform: translate(77px, -2px);
+  }
+  25% {
+    rotate: -145deg;
+    transform: translate(69px, -22px);
+  }
+  50% {
+    rotate: -90deg;
+    transform: translate(38px, -38px);
+  }
+  75% {
+    rotate: -40deg;
+    transform: translate(10px, -24px);
+  }
+  100% {
+    rotate: 0;
+    transform: none;
+  }
+}
+.section_trend .trend03 .trend03_inner .trend03_boxWrap .box02 .text_wrap {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e1e1e1;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.section_trend .trend03 .trend03_inner .trend03_boxWrap .box02 .text_wrap .battery .title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #8c8c8c;
+}
+.section_trend .trend03 .trend03_inner .trend03_boxWrap .box02 .text_wrap .battery h6 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+.section_trend .trend03 .trend03_inner .trend03_boxWrap .box02 .text_wrap .distance .title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #8c8c8c;
+}
+.section_trend .trend03 .trend03_inner .trend03_boxWrap .box02 .text_wrap .distance h6 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.section_trend .trend03 .trend03_inner .trend03_boxWrap .box02 .text_wrap .distance h6 span {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.practicePage {
+  width: 1920px;
+  height: 100vh;
+  background-color: #000;
+  position: relative;
+}
+.practicePage::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -100vh;
+  left: 0;
+  background-color: #e1e1e1;
+  z-index: -1;
+}

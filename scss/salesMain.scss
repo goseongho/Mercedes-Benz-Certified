@@ -1,0 +1,217 @@
+@import "reset", "font", "variable";
+
+.salesMain_wrap {
+  max-width: 1920px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  .salesMain_left {
+    position: relative;
+    flex: 1;
+    .salesMain_left_in {
+      position: absolute;
+      top: 25%;
+      right: 10%;
+      width: 600px;
+      height: 500px;
+      box-sizing: border-box;
+      .salesMain_left_title {
+        line-height: 40px;
+        p {
+          color: $dim-darkgray;
+        }
+        h3 {
+          color: $dark-black;
+          font-size: $logo-h3;
+          font-weight: $bold;
+        }
+      }
+      .salesMain_icon_wrap {
+        margin-top: 180px;
+        display: flex;
+        .salesMain_icon {
+          position: relative;
+          flex: 1;
+          color: $dim-black;
+          text-align: center;
+          line-height: 30px;
+          h5 {
+            color: #04589b;
+            font-weight: $bold;
+          }
+          &:nth-child(1)::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100px;
+            width: 100px;
+            background-image: url(../img/salesMain/ico_sale_benefit1.png);
+            margin-top: -160px;
+          }
+          &:nth-child(2)::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: -160px;
+            height: 100px;
+            width: 100px;
+            background-image: url(../img/salesMain/ico_sale_benefit2.png);
+          }
+          &:nth-child(3)::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: -160px;
+            height: 100px;
+            width: 100px;
+            background-image: url(../img/salesMain/ico_sale_benefit3.png);
+          }
+        }
+      }
+      .alesMain_guid {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: inherit;
+        a {
+          margin-right: 20px;
+          color: $dim-darkgray;
+          text-decoration: underline;
+          font-size: $h6;
+        }
+      }
+    }
+  }
+  .salesMain_right {
+    background-color: $pale-green;
+    flex: 1;
+    position: relative;
+    .salesMain_right_in {
+      position: absolute;
+      top: 25%;
+      left: 20%;
+      .salesMain_right_title {
+        h2 {
+          opacity: 1;
+          color: $dark-black;
+          font-size: $logo-h3;
+          font-weight: $bold;
+          animation: ani01 linear 1s;
+          @keyframes ani01 {
+            0% {
+              opacity: 0;
+            }
+            20% {
+              opacity: 0;
+              transform: translateY(15px);
+            }
+            30% {
+              opacity: 0.3;
+              transform: translateY(5px);
+            }
+            40% {
+              opacity: 0.4;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+        }
+        h4 {
+          margin-top: 30px;
+          color: $dim-black;
+          font-weight: $bold;
+          line-height: 22px;
+          font-size: $h6;
+          margin-bottom: 30px;
+          animation: ani02 linear 2.5s;
+          @keyframes ani02 {
+            0% {
+              opacity: 0;
+            }
+            20% {
+              opacity: 0;
+              transform: translateY(15px);
+            }
+            30% {
+              opacity: 1;
+            }
+            40% {
+              opacity: 1;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+        }
+        h5 {
+          line-height: 60px;
+          font-size: $strong;
+          font-weight: $bold;
+          animation: ani03 linear 5s;
+          @keyframes ani03 {
+            0% {
+              opacity: 0;
+            }
+            20% {
+              opacity: 0;
+              transform: translateY(15px);
+            }
+            30% {
+              opacity: 0.3;
+              transform: translateY(5px);
+            }
+            40% {
+              opacity: 1;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+        }
+        input {
+          color: $white;
+          background-color: transparent;
+          width: 150px;
+          font-weight: $bold;
+          font-size: $h5;
+          border-bottom: 3px solid $dim-black;
+          outline: none;
+          &::placeholder {
+            color: #eee;
+          }
+        }
+      }
+      .Detailed {
+        margin-top: 30px;
+        line-height: 20px;
+        color: $gray;
+        font-size: 14px;
+        animation: ani04 linear 6s;
+        @keyframes ani04 {
+          0% {
+            opacity: 0;
+          }
+          20% {
+            opacity: 0;
+            transform: translateY(15px);
+          }
+          30% {
+            opacity: 0.3;
+            transform: translateY(5px);
+          }
+          40% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+header-icon
+
+검색 아이콘 <i class="fa-solid fa-magnifying-glass"></i>
+별 아이콘<i class="fa-regular fa-star"></i> 
+별 아이콘 색 채워진거 <i class="fa-solid fa-star"></i>
+장바구니 아이콘 <i class="fa-light fa-cart-shopping"></i>
+유저 아이콘 <i class="fa-solid fa-user"></i>

@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../img/header/header-logo.svg">
+  <title>Document</title>
+  <!-- fontAwesome Icon Cdn-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/subpage01.css">
+</head>
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="header_in">
+      <div class="header_logo">
+        <a href="../mainPage.html">
+          <img src="../img/header/header-logo.svg" alt="mainLogo" />
+          <p>Mercedes-Benz Certified</p>
+        </a>
+      </div>
+      <div class="nav">
+        <ul class="nav_wrap">
+          <li><a href="../mainPage.html" id="pageMove">내차사기</a></li>
+          <li><a href="../html/salesMain.html" id="pageMove">내차팔기</a></li>
+          <li><a href="#none">인증 중고차</a></li>
+          <li><a href="../html/map.html" class="last2" id="pageMove">시승신청</a></li>
+          <li><a href="#none" class="last">기획전</a></li>
+        </ul>
+      </div>
+      <div class="header_icon">
+        <div class="icon_wrap">
+          <a href="#none"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#none"><i class="fa-regular fa-star"></i> </a>
+          <a href="#none"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="#none"><i class="fa-solid fa-user"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="trigger">
+    <span class="line line1"></span>
+    <span class="line line2"></span>
+    <span class="line line3"></span>
+  </div>
+  <!-- sitemap -->
+  <div class="site_map">
+    <div class="site_map_wrap">
+      <div class="site_map_in">
+        <div class="site_logo">
+          <a href="../mainPage.html">
+            <img src="../img/header/header-logo.svg" alt="사이트맵로고">
+          </a>
+        </div>
+        <li class="sub_menu">
+          <a href="#none" id="goOtherPage">거래하기</a>
+          <i class="fa-solid fa-chevron-down" id="arrow"></i>
+        </li>
+        <ul class="mobile_subtab">
+          <li><a href="../mainPage.html" id="goOtherPage">내차사기</a></li>
+          <li><a href="../html/salesMain.html" id="goOtherPage">내차팔기</a></li>
+        </ul>
+        <li class="sub_menu">
+          <a href="#none">EQ-Car</a>
+          <i class="fa-solid fa-chevron-down" id="arrow"></i>
+        </li>
+        <ul class="mobile_subtab">
+          <li><a href="#none">EQ 테크놀로지</a></li>
+          <li><a href="#none">EQ 서비스</a></li>
+          <li><a href="#none">지속가능성</a></li>
+        </ul>
+        <li class="sub_menu">
+          <a href="#none">인증중고차</a>
+          <i class="fa-solid fa-chevron-down" id="arrow"></i>
+        </li>
+        <ul class="mobile_subtab">
+          <li><a href="#none">엄격한 품질검사</a></li>
+          <li><a href="#none">서비스 품질 1위</a></li>
+          <li><a href="#none">안전한 매물</a></li>
+          <li><a href="#none">무상보증 프로그램</a></li>
+          <li><a href="#none">제휴혜택</a></li>
+          <li><a href="#none">24시간 긴급 출동 서비스</a></li>
+        </ul>
+        <li class="sub_menu">
+          <a href="#" id="goOtherPage">시승신청</a>
+          <i class="fa-solid fa-chevron-down" id="arrow"></i>
+        </li>
+        <ul class="mobile_subtab">
+          <li><a href="../html/map.html" id="goOtherPage">전시장 찾기</a></li>
+          <li><a href="#none">시승 상담 신청</a></li>
+        </ul>
+        <li class="sub_menu">
+          <a href="#none">프로모션&뉴스</a>
+          <i class="fa-solid fa-chevron-down" id="arrow"></i>
+        </li>
+        <ul class="mobile_subtab">
+          <li><a href="#none">이달의 프로모션</a></li>
+        </ul>
+      </div>
+      <div class="site_map_footer">
+        <div class="site_map_footer_top">
+          <a href="#none">이용약관</a>
+          <a href="#none">고객센터</a>
+        </div>
+        <div class="site_map_footer_bottom">
+          <a href="#none"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#none"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#none"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- subpage01 -->
+  <div class="subpage01">
+    <div class="subpage01_wrap">
+      <div class="sub01_top">
+        <div class="search_box">
+          <input type="text" placeholder="모델명, 차량번호로 검색해보세요.">
+          <a href="#none"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        <div class="subBottom_title">
+          <h3>검색 결과가 <span>18</span>건이 검색되었습니다.</h3>
+        </div>
+      </div>
+      <hr class="sub01_line">
+      <div class="sub01_bottom">
+        <div class="subTop_title">
+          <h5>전체 <span>18</span>대</h5>
+          <select name="" id="">
+            <option value="">인기순</option>
+            <option value="">최신순</option>
+          </select>
+        </div>
+        <div class="sub01_list">
+          <div class="sub01_list_wrap">
+            <div class="sub01_list_item">
+              <div class="sub01_left">
+                <div class="sub01_left_img">
+                 <a href="../html/subpage02.html">
+                  <img src="../img/subpage01/sub01_img(g-class).png" alt="list_img">
+                 </a>
+                </div>
+                <div class="sub01_left_text">
+                  <a href="../html/subpage02.html">Mercedes-AMG G 63 Edition</a>
+                  <div class="sub01_left_detail">
+                    <p>22년12월</p>
+                    <p>6,710km</p>
+                    <p>177보4594</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sub01_right">
+                <div class="sub01_right_discount">
+                  <span>200만원할인</span>
+                  <div class="discount">
+                    <p>24,200만원</p>
+                    <h6>24,000만원</h6>
+                  </div>
+                  <a href="#none" class="sub01_star">
+                    <i class="fa-regular fa-star"></i>
+                    45
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="sub01_list_item">
+              <div class="sub01_left">
+                <div class="sub01_left_img">
+                 <a href="../html/subpage02.html">
+                  <img src="../img/subpage01/sub01_img(g-class)18.webp" alt="list_img">
+                 </a>
+                </div>
+                <div class="sub01_left_text">
+                  <a href="../html/subpage02.html">Mercedes-AMG G 63 Edition</a>
+                  <div class="sub01_left_detail">
+                    <p>22년12월</p>
+                    <p>6,710km</p>
+                    <p>177보4594</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sub01_right">
+                <div class="sub01_right_discount">
+                  <span>200만원할인</span>
+                  <div class="discount">
+                    <p>24,200만원</p>
+                    <h6>24,000만원</h6>
+                  </div>
+                  <a href="#none" class="sub01_star">
+                    <i class="fa-regular fa-star"></i>
+                    45
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="sub01_list_item">
+              <div class="sub01_left">
+                <div class="sub01_left_img">
+                 <a href="../html/subpage02.html">
+                  <img src="../img/subpage01/sub01_img(g-class)2.webp" alt="list_img">
+                 </a>
+                </div>
+                <div class="sub01_left_text">
+                  <a href="../html/subpage02.html">Mercedes-AMG G 63 Edition</a>
+                  <div class="sub01_left_detail">
+                    <p>22년12월</p>
+                    <p>6,710km</p>
+                    <p>177보4594</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sub01_right">
+                <div class="sub01_right_discount">
+                  <span>200만원할인</span>
+                  <div class="discount">
+                    <p>24,200만원</p>
+                    <h6>24,000만원</h6>
+                  </div>
+                  <a href="#none" class="sub01_star">
+                    <i class="fa-regular fa-star"></i>
+                    45
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="sub01_list_item">
+              <div class="sub01_left">
+                <div class="sub01_left_img">
+                 <a href="../html/subpage02.html">
+                  <img src="../img/subpage01/sub01_img(g-class)3.webp" alt="list_img">
+                 </a>
+                </div>
+                <div class="sub01_left_text">
+                  <a href="../html/subpage02.html">Mercedes-AMG G 63 Edition</a>
+                  <div class="sub01_left_detail">
+                    <p>22년12월</p>
+                    <p>6,710km</p>
+                    <p>177보4594</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sub01_right">
+                <div class="sub01_right_discount">
+                  <span>200만원할인</span>
+                  <div class="discount">
+                    <p>24,200만원</p>
+                    <h6>24,000만원</h6>
+                  </div>
+                  <a href="#none" class="sub01_star">
+                    <i class="fa-regular fa-star"></i>
+                    45
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="sub01_list_item">
+              <div class="sub01_left">
+                <div class="sub01_left_img">
+                 <a href="../html/subpage02.html">
+                  <img src="../img/subpage01/sub01_img(g-class)4.webp" alt="list_img">
+                 </a>
+                </div>
+                <div class="sub01_left_text">
+                  <a href="../html/subpage02.html">Mercedes-AMG G 63 Edition</a>
+                  <div class="sub01_left_detail">
+                    <p>22년12월</p>
+                    <p>6,710km</p>
+                    <p>177보4594</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sub01_right">
+                <div class="sub01_right_discount">
+                  <span>200만원할인</span>
+                  <div class="discount">
+                    <p>24,200만원</p>
+                    <h6>24,000만원</h6>
+                  </div>
+                  <a href="#none" class="sub01_star">
+                    <i class="fa-regular fa-star"></i>
+                    45
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="sub01_list_item">
+              <div class="sub01_left">
+                <div class="sub01_left_img">
+                 <a href="../html/subpage02.html">
+                  <img src="../img/subpage01/sub01_img(g-class)5.webp" alt="list_img">
+                 </a>
+                </div>
+                <div class="sub01_left_text">
+                  <a href="../html/subpage02.html">Mercedes-AMG G 63 Edition</a>
+                  <div class="sub01_left_detail">
+                    <p>22년12월</p>
+                    <p>6,710km</p>
+                    <p>177보4594</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sub01_right">
+                <div class="sub01_right_discount">
+                  <span>200만원할인</span>
+                  <div class="discount">
+                    <p>24,200만원</p>
+                    <h6>24,000만원</h6>
+                  </div>
+                  <a href="#none" class="sub01_star">
+                    <i class="fa-regular fa-star"></i>
+                    45
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="sub01_list_item">
+              <div class="sub01_left">
+                <div class="sub01_left_img">
+                 <a href="../html/subpage02.html">
+                  <img src="../img/subpage01/sub01_img(g-class)6.webp" alt="list_img">
+                 </a>
+                </div>
+                <div class="sub01_left_text">
+                  <a href="../html/subpage02.html">Mercedes-AMG G 63 Edition</a>
+                  <div class="sub01_left_detail">
+                    <p>22년12월</p>
+                    <p>6,710km</p>
+                    <p>177보4594</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sub01_right">
+                <div class="sub01_right_discount">
+                  <span>200만원할인</span>
+                  <div class="discount">
+                    <p>24,200만원</p>
+                    <h6>24,000만원</h6>
+                  </div>
+                  <a href="#none" class="sub01_star">
+                    <i class="fa-regular fa-star"></i>
+                    45
+                  </a>
+                </div>
+              </div>
+            </div>
+             <!-- section_event -->
+            <section class="event">
+              <div class="event_in">
+                <div class="event_text">
+                  <h3>이벤트 / 기획전</h3>
+                  <p>진행중인 이벤트 / 기획전을 확인해 보세요.</p>
+                  <a href="#none">바로가기</a>
+                </div>
+                <div class="event_img">
+                </div>
+              </div>
+            </section>
+            <div class="sub01_list_item">
+              <div class="sub01_left">
+                <div class="sub01_left_img">
+                 <a href="../html/subpage02.html">
+                  <img src="../img/subpage01/sub01_img(g-class)7.webp" alt="list_img">
+                 </a>
+                </div>
+                <div class="sub01_left_text">
+                  <a href="../html/subpage02.html">Mercedes-AMG G 63 Edition</a>
+                  <div class="sub01_left_detail">
+                    <p>22년12월</p>
+                    <p>6,710km</p>
+                    <p>177보4594</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sub01_right">
+                <div class="sub01_right_discount">
+                  <span>200만원할인</span>
+                  <div class="discount">
+                    <p>24,200만원</p>
+                    <h6>24,000만원</h6>
+                  </div>
+                  <a href="#none" class="sub01_star">
+                    <i class="fa-regular fa-star"></i>
+                    45
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="sub01_list_item">
+              <div class="sub01_left">
+                <div class="sub01_left_img">
+                 <a href="../html/subpage02.html">
+                  <img src="../img/subpage01/sub01_img(g-class)8.webp" alt="list_img">
+                 </a>
+                </div>
+                <div class="sub01_left_text">
+                  <a href="../html/subpage02.html">Mercedes-AMG G 63 Edition</a>
+                  <div class="sub01_left_detail">
+                    <p>22년12월</p>
+                    <p>6,710km</p>
+                    <p>177보4594</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sub01_right">
+                <div class="sub01_right_discount">
+                  <span>200만원할인</span>
+                  <div class="discount">
+                    <p>24,200만원</p>
+                    <h6>24,000만원</h6>
+                  </div>
+                  <a href="#none" class="sub01_star">
+                    <i class="fa-regular fa-star"></i>
+                    45
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="sub01_list_item">
+              <div class="sub01_left">
+                <div class="sub01_left_img">
+                 <a href="../html/subpage02.html">
+                  <img src="../img/subpage01/sub01_img(g-class)9.webp" alt="list_img">
+                 </a>
+                </div>
+                <div class="sub01_left_text">
+                  <a href="../html/subpage02.html">Mercedes-AMG G 63 Edition</a>
+                  <div class="sub01_left_detail">
+                    <p>22년12월</p>
+                    <p>6,710km</p>
+                    <p>177보4594</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sub01_right">
+                <div class="sub01_right_discount">
+                  <span>200만원할인</span>
+                  <div class="discount">
+                    <p>24,200만원</p>
+                    <h6>24,000만원</h6>
+                  </div>
+                  <a href="#none" class="sub01_star">
+                    <i class="fa-regular fa-star"></i>
+                    45
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="sub01_list_item">
+              <div class="sub01_left">
+                <div class="sub01_left_img">
+                 <a href="../html/subpage02.html">
+                  <img src="../img/subpage01/sub01_img(g-class)10.webp" alt="list_img">
+                 </a>
+                </div>
+                <div class="sub01_left_text">
+                  <a href="../html/subpage02.html">Mercedes-AMG G 63 Edition</a>
+                  <div class="sub01_left_detail">
+                    <p>22년12월</p>
+                    <p>6,710km</p>
+                    <p>177보4594</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sub01_right">
+                <div class="sub01_right_discount">
+                  <span>200만원할인</span>
+                  <div class="discount">
+                    <p>24,200만원</p>
+                    <h6>24,000만원</h6>
+                  </div>
+                  <a href="#none" class="sub01_star">
+                    <i class="fa-regular fa-star"></i>
+                    45
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="sub01_list_item">
+              <div class="sub01_left">
+                <div class="sub01_left_img">
+                 <a href="../html/subpage02.html">
+                  <img src="../img/subpage01/sub01_img(g-class)11.webp" alt="list_img">
+                 </a>
+                </div>
+                <div class="sub01_left_text">
+                  <a href="../html/subpage02.html">Mercedes-AMG G 63 Edition</a>
+                  <div class="sub01_left_detail">
+                    <p>22년12월</p>
+                    <p>6,710km</p>
+                    <p>177보4594</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sub01_right">
+                <div class="sub01_right_discount">
+                  <span>200만원할인</span>
+                  <div class="discount">
+                    <p>24,200만원</p>
+                    <h6>24,000만원</h6>
+                  </div>
+                  <a href="#none" class="sub01_star">
+                    <i class="fa-regular fa-star"></i>
+                    45
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="sub01_list_item">
+              <div class="sub01_left">
+                <div class="sub01_left_img">
+                 <a href="../html/subpage02.html">
+                  <img src="../img/subpage01/sub01_img(g-class)12.webp" alt="list_img">
+                 </a>
+                </div>
+                <div class="sub01_left_text">
+                  <a href="../html/subpage02.html">Mercedes-AMG G 63 Edition</a>
+                  <div class="sub01_left_detail">
+                    <p>22년12월</p>
+                    <p>6,710km</p>
+                    <p>177보4594</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sub01_right">
+                <div class="sub01_right_discount">
+                  <span>200만원할인</span>
+                  <div class="discount">
+                    <p>24,200만원</p>
+                    <h6>24,000만원</h6>
+                  </div>
+                  <a href="#none" class="sub01_star">
+                    <i class="fa-regular fa-star"></i>
+                    45
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="sub01_list_item">
+              <div class="sub01_left">
+                <div class="sub01_left_img">
+                 <a href="../html/subpage02.html">
+                  <img src="../img/subpage01/sub01_img(g-class)13.webp" alt="list_img">
+                 </a>
+                </div>
+                <div class="sub01_left_text">
+                  <a href="../html/subpage02.html">Mercedes-AMG G 63 Edition</a>
+                  <div class="sub01_left_detail">
+                    <p>22년12월</p>
+                    <p>6,710km</p>
+                    <p>177보4594</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sub01_right">
+                <div class="sub01_right_discount">
+                  <span>200만원할인</span>
+                  <div class="discount">
+                    <p>24,200만원</p>
+                    <h6>24,000만원</h6>
+                  </div>
+                  <a href="#none" class="sub01_star">
+                    <i class="fa-regular fa-star"></i>
+                    45
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="sub01_list_item">
+              <div class="sub01_left">
+                <div class="sub01_left_img">
+                 <a href="../html/subpage02.html">
+                  <img src="../img/subpage01/sub01_img(g-class)14.webp" alt="list_img">
+                 </a>
+                </div>
+                <div class="sub01_left_text">
+                  <a href="../html/subpage02.html">Mercedes-AMG G 63 Edition</a>
+                  <div class="sub01_left_detail">
+                    <p>22년12월</p>
+                    <p>6,710km</p>
+                    <p>177보4594</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sub01_right">
+                <div class="sub01_right_discount">
+                  <span>200만원할인</span>
+                  <div class="discount">
+                    <p>24,200만원</p>
+                    <h6>24,000만원</h6>
+                  </div>
+                  <a href="#none" class="sub01_star">
+                    <i class="fa-regular fa-star"></i>
+                    45
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="sub01_list_item">
+              <div class="sub01_left">
+                <div class="sub01_left_img">
+                 <a href="../html/subpage02.html">
+                  <img src="../img/subpage01/sub01_img(g-class)15.webp" alt="list_img">
+                 </a>
+                </div>
+                <div class="sub01_left_text">
+                  <a href="../html/subpage02.html">Mercedes-AMG G 63 Edition</a>
+                  <div class="sub01_left_detail">
+                    <p>22년12월</p>
+                    <p>6,710km</p>
+                    <p>177보4594</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sub01_right">
+                <div class="sub01_right_discount">
+                  <span>200만원할인</span>
+                  <div class="discount">
+                    <p>24,200만원</p>
+                    <h6>24,000만원</h6>
+                  </div>
+                  <a href="#none" class="sub01_star">
+                    <i class="fa-regular fa-star"></i>
+                    45
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="sub01_list_item">
+              <div class="sub01_left">
+                <div class="sub01_left_img">
+                 <a href="../html/subpage02.html">
+                  <img src="../img/subpage01/sub01_img(g-class)16.webp" alt="list_img">
+                 </a>
+                </div>
+                <div class="sub01_left_text">
+                  <a href="../html/subpage02.html">Mercedes-AMG G 63 Edition</a>
+                  <div class="sub01_left_detail">
+                    <p>22년12월</p>
+                    <p>6,710km</p>
+                    <p>177보4594</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sub01_right">
+                <div class="sub01_right_discount">
+                  <span>200만원할인</span>
+                  <div class="discount">
+                    <p>24,200만원</p>
+                    <h6>24,000만원</h6>
+                  </div>
+                  <a href="#none" class="sub01_star">
+                    <i class="fa-regular fa-star"></i>
+                    45
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="sub01_list_item">
+              <div class="sub01_left">
+                <div class="sub01_left_img">
+                 <a href="../html/subpage02.html">
+                  <img src="../img/subpage01/sub01_img(g-class)17.webp" alt="list_img">
+                 </a>
+                </div>
+                <div class="sub01_left_text">
+                  <a href="../html/subpage02.html">Mercedes-AMG G 63 Edition</a>
+                  <div class="sub01_left_detail">
+                    <p>22년12월</p>
+                    <p>6,710km</p>
+                    <p>177보4594</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sub01_right">
+                <div class="sub01_right_discount">
+                  <span>200만원할인</span>
+                  <div class="discount">
+                    <p>24,200만원</p>
+                    <h6>24,000만원</h6>
+                  </div>
+                  <a href="#none" class="sub01_star">
+                    <i class="fa-regular fa-star"></i>
+                    45
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer_inner">
+      <div class="footer_logo">
+        <img src="../img/footer/footer_logo.png" alt="푸터로고">
+      </div>
+      <div class="footer_text_wrap">
+        <ul class="footer_text_top">
+          <li><a href="#none">개인정보처리방침</a></li>
+          <li><a href="#none">법적고지</a></li>
+          <li><a href="#none">이용약관</a></li>
+          <li><a href="#none">딜러사 정보</a></li>
+        </ul>
+        <div class="footer_text_bottom">
+          <p>메르세데스-벤츠 코리아㈜&nbsp;서울특별시 중구 한강대로 416 서울 스퀘어 9층 (우) 04637</p>
+          <p>대표자 성명 : VAITL MATHIAS ALEXANDER</p>
+          <p>사업자 등록번호: 220-86-46545</p>
+          <p id="m-none">호스팅서비스 제공자: Amazon Web Services, Inc.</p>
+          <p id="m-none">고객 컨택 센터: 경기도 부천시 원미구 부일로 223 투나 8층 (우) 14623</p>
+          <p>전화: 080-001-1886</p>
+          <p>이메일 : mbk_cs@daimler.com</p>
+          <span id="m-none"> 메르세데스-벤츠 코리아㈜는 통신판매중개자이고 통신판매의 당사자가 아니며, 상품, 상품정보, 거래에 관한 의무와 책임은 판매자에게 있습니다. <br>
+          </span>
+          <span id="copy">&copy; 2024. 메르세데스-벤츠 코리아(주) 판권소유 (제공 업체)</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="quickMenu">
+    <a href="#none" class="open_madal" alt="서비스모달창">
+      <i class="fa-brands fa-rocketchat"></i>
+    </a>
+    <a href="#none" class="gototop_Btn" onclick="goToTop()" alt="맨위로이동">
+      <i class="fa-solid fa-chevron-up"></i>
+      <h5>TOP</h5>
+    </a>
+  </div>
+  <div class="modal">
+    <div class="modal_top">
+      <div class="modal_close">
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <div class="modal_text">
+        <h3>메르세데스-벤츠 스토어에 <br>
+          오신 것을 환영합니다!</h3>
+        <p>무엇을 도와드릴까요?</p>
+        <small>개인정보의 수집 및 이용 동의</small>
+      </div>
+    </div>
+    <div class="modal_button_wrap">
+      <button id="past">문의이력</button>
+      <button id="immediately">실시간 문의하기</button>
+    </div>
+  </div>
+  <script src="../js/subpage01.js"></script>
+</body>
+</html>

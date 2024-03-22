@@ -1,0 +1,174 @@
+@charset "UTF-8";
+/* ===========reset=========== */
+@import url("https://webfontworld.github.io/GothicA1/GothicA1.css");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap");
+@import url("https://webfontworld.github.io/Cafe24SsurroundAir/Cafe24SsurroundAir.css");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+body {
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+ol, ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+/*Font Family*/
+/*Font Size*/
+/*Font Weight*/
+/* Setting Variables : Object Color */
+/* Setting Variables : Text Color */
+/*google WEB FONT Gothic A1*/
+/*google WEB FONT Inria Serif*/
+/* 폰트어썸 아이콘cdn */
+/*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />*/
+.section_question {
+  max-width: 1920px;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/section_question/Q&A\ BG2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #8c8c8c;
+  background-position-y: -280px;
+  background-blend-mode: multiply;
+}
+.section_question .question_inner {
+  position: relative;
+  margin: auto;
+  width: 1200px;
+  height: inherit;
+}
+.section_question .question_inner .question_top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  text-align: center;
+  line-height: 40px;
+}
+.section_question .question_inner .question_top p {
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Inria Serif";
+}
+.section_question .question_inner .question_top h3 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.section_question .question_inner .question_top a {
+  margin-top: 50px;
+  font-weight: 700;
+  color: #404040;
+  display: block;
+  width: 144px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 1.1rem;
+  background-color: rgba(255, 255, 255, 0.5019607843);
+  transition: 0.3s;
+}
+.section_question .question_inner .question_top a:hover {
+  color: #01252a;
+  background-color: #8fa7bd;
+}
+.section_question .question_inner .question_bottom {
+  margin: auto;
+  width: 1200px;
+}
+.section_question .question_inner .question_bottom .mySwiper_question {
+  width: 100%;
+  margin-top: 140px;
+}
+.section_question .question_inner .question_bottom .mySwiper_question .swiper-wrapper {
+  margin-top: 90px;
+}
+.section_question .question_inner .question_bottom .mySwiper_question .swiper-wrapper .swiper-slide {
+  height: 250px;
+  background-color: rgba(225, 225, 225, 0.3764705882);
+  padding: 1.8rem;
+  /* 박스 hover시 효과 */
+  transition: 0.35s ease-in-out;
+}
+.section_question .question_inner .question_bottom .mySwiper_question .swiper-wrapper .swiper-slide:hover {
+  transform: translateY(-25px);
+  background-color: rgba(202, 214, 216, 0.5647058824);
+}
+.section_question .question_inner .question_bottom .mySwiper_question .swiper-wrapper .swiper-slide a {
+  height: 100%;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 700;
+}
+.section_question .question_inner .question_bottom .mySwiper_question .swiper-wrapper .swiper-slide a h5 {
+  text-shadow: 1px 1px 5px #191919;
+  font-size: 0.9rem;
+}
+.section_question .question_inner .question_bottom .mySwiper_question .swiper-wrapper .swiper-slide a h6 {
+  text-shadow: 1px 1px 5px #191919;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.section_question .question_inner .swiper-button-next {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  color: #fff;
+  margin-top: 150px;
+  right: -50px;
+  background-color: rgba(255, 255, 255, 0.3137254902);
+}
+.section_question .question_inner .swiper-button-next::after {
+  font-size: 0.78rem;
+}
+.section_question .question_inner .swiper-button-prev {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  color: #fff;
+  margin-top: 150px;
+  left: -50px;
+  background-color: rgba(255, 255, 255, 0.3137254902);
+}
+.section_question .question_inner .swiper-button-prev::after {
+  font-size: 0.78rem;
+}
